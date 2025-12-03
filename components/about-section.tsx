@@ -63,7 +63,7 @@ export function AboutSection() {
 
   return (
     <section id="about" className="py-12 bg-muted/50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
@@ -113,8 +113,7 @@ export function AboutSection() {
               <img 
                 src="/our story.png" 
                 alt="Our Story - Shri Guru Traders Journey"
-                className="w-full h-auto rounded-2xl shadow-lg object-cover"
-                style={{ maxHeight: "400px" }}
+                className="w-full h-auto rounded-2xl shadow-lg object-cover lg:max-h-[400px] md:max-h-[350px] max-h-[250px]"
               />
             </div>
           </div>

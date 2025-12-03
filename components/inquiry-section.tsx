@@ -41,7 +41,7 @@ export function InquirySection() {
 
   return (
     <section id="contact" className="py-12 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-10">

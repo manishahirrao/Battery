@@ -13,7 +13,7 @@ interface WelcomePopupProps {
 export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupProps) {
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-md p-0 overflow-hidden border-0">
+      <DialogContent className="sm:max-w-md p-0 overflow-hidden border-0" style={{ zIndex: 9999 }}>
         <DialogTitle className="sr-only">Welcome to Shri Guru Traders</DialogTitle>
         <DialogDescription className="sr-only">
           Special offer on premium batteries with free delivery and best value guarantee
@@ -26,11 +26,11 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
           >
             <X className="w-5 h-5" />
           </button>
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex items-center gap-4 mb-3">
             <img 
-              src="/logo.jpg" 
+              src="/logo.png" 
               alt="Shri Guru Traders Logo"
-              className="w-12 h-12 rounded-lg"
+              className="w-36 h-16 rounded-lg"
             />
             <div>
               <h2 className="text-xl font-bold">Welcome to</h2>

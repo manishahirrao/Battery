@@ -28,7 +28,9 @@ export function Header({ onInquiryClick }: HeaderProps) {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <header 
+     style={{  zIndex: 2000 }}
+    className="sticky top-0 z-80 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}

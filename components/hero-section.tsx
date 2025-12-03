@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Zap, Phone, CheckCircle } from "lucide-react"
+import { useEffect } from "react"
 
 interface HeroSectionProps {
   onInquiryClick: () => void
@@ -10,10 +11,33 @@ interface HeroSectionProps {
 
 export function HeroSection({ onInquiryClick }: HeroSectionProps) {
   const scrollToProducts = () => {
-    document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })
+    // Try to find the products section
+    const productsSection = document.getElementById("products")
+    if (productsSection) {
+      // Add a small delay to ensure the DOM is ready
+      setTimeout(() => {
+        productsSection.scrollIntoView({ behavior: "smooth", block: "start" })
+      }, 100)
+    } else {
+      // Fallback: navigate to home page with hash
+      window.location.href = "/#products"
+    }
   }
 
+  // Handle URL hash scrolling on component mount
+  useEffect(() => {
+    if (window.location.hash === "#products") {
+      setTimeout(() => {
+        const productsSection = document.getElementById("products")
+        if (productsSection) {
+          productsSection.scrollIntoView({ behavior: "smooth", block: "start" })
+        }
+      }, 500)
+    }
+  }, [])
+
   return (
+    <>
     <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -25,7 +49,7 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 text-center lg:text-left">
@@ -34,9 +58,7 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
                 <Zap className="w-3 h-3 mr-1" />
                 Trusted by 50,000+ Customers
               </Badge>
-              <Badge variant="outline" className="border-green-500/30 text-green-600 px-4 py-1">
-                Up to 20% Off on Bulk Orders
-              </Badge>
+             
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
@@ -62,29 +84,32 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
               </span>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
               <Button
                 size="lg"
                 onClick={scrollToProducts}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
+                style={{ position: 'relative' }}
               >
                 View Products
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={onInquiryClick}
-                className="border-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground px-8 py-6 text-lg bg-transparent"
+              <button
+                onClick={() => {
+                  onInquiryClick()
+                }}
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 py-6 text-lg"
+                style={{ position: 'relative' }}
               >
                 Get Free Quote
-              </Button>
+              </button>
             </div>
 
             <div className="flex items-center gap-4 justify-center lg:justify-start pt-2">
               <a
                 href="tel:+919876543210"
                 className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                style={{ position: 'relative', zIndex: 1000 }}
               >
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-primary" />
@@ -125,8 +150,7 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
               <img
                 src="/hero image.png"
                 alt="Premium Battery Collection"
-                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
-                style={{ maxHeight: "500px" }}
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover lg:max-h-[500px] md:max-h-[400px] max-h-[300px]"
               />
               <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground p-3 rounded-xl shadow-lg">
                 <p className="text-sm font-bold">Free Delivery</p>
@@ -139,5 +163,6 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
         </div>
       </div>
     </section>
+    </>
   )
 }

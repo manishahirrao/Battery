@@ -100,7 +100,7 @@ const products = [
 export function ProductsSection({ onInquiryClick }: ProductsSectionProps) {
   return (
     <section id="products" className="py-12 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Our Products</Badge>
@@ -115,7 +115,7 @@ export function ProductsSection({ onInquiryClick }: ProductsSectionProps) {
         </div>
 
         {/* Products Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {products.map((product) => (
             <Link key={product.name} href={product.route}>
               <Card

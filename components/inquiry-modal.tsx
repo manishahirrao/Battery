@@ -62,7 +62,7 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
-      <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto p-0">
+      <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto p-0" style={{ zIndex: 9999 }}>
         <DialogTitle className="sr-only">Battery Inquiry Form</DialogTitle>
         <DialogDescription className="sr-only">
           Fill out the form to get a quote for your battery requirements. Our team will contact you within 30 minutes.
