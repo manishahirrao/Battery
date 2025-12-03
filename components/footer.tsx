@@ -45,13 +45,15 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary">
-                <Zap className="w-6 h-6 text-primary-foreground" />
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="Shri Guru Traders Logo"
+                className="h-10 w-auto rounded-lg"
+              />
               <span className="text-xl font-bold">Shri Guru Traders</span>
             </div>
             <p className="text-background/70 text-sm leading-relaxed">
-              Your trusted power partner since 2008. We are authorized dealers for all major battery brands in India,
+              Your trusted power partner. We are authorized dealers for all major battery brands in India,
               providing quality products with the best warranty and service.
             </p>
             <p className="text-accent font-medium text-sm">Powering Your World!</p>
@@ -131,6 +133,12 @@ export function Footer() {
                 Home
               </button>
               <button
+                onClick={() => scrollToSection("about")}
+                className="block text-background/70 hover:text-background transition-colors text-sm"
+              >
+                About
+              </button>
+              <button
                 onClick={() => scrollToSection("products")}
                 className="block text-background/70 hover:text-background transition-colors text-sm"
               >
@@ -152,18 +160,24 @@ export function Footer() {
 
             <h4 className="text-lg font-bold pt-4">Products</h4>
             <nav className="space-y-2">
-              <button className="block text-background/70 hover:text-background transition-colors text-sm">
+              <a href="/batteries/automotive" className="block text-background/70 hover:text-background transition-colors text-sm">
                 Car Batteries
-              </button>
-              <button className="block text-background/70 hover:text-background transition-colors text-sm">
+              </a>
+              <a href="/batteries/inverter" className="block text-background/70 hover:text-background transition-colors text-sm">
                 Inverter Batteries
-              </button>
-              <button className="block text-background/70 hover:text-background transition-colors text-sm">
+              </a>
+              <a href="/batteries/solar" className="block text-background/70 hover:text-background transition-colors text-sm">
                 Solar Batteries
-              </button>
-              <button className="block text-background/70 hover:text-background transition-colors text-sm">
+              </a>
+              <a href="/batteries/e-rickshaw" className="block text-background/70 hover:text-background transition-colors text-sm">
                 E-Rickshaw Batteries
-              </button>
+              </a>
+              <a href="/batteries/two-wheeler" className="block text-background/70 hover:text-background transition-colors text-sm">
+                Two Wheeler Batteries
+              </a>
+              <a href="/batteries/truck-bus" className="block text-background/70 hover:text-background transition-colors text-sm">
+                Truck & Bus Batteries
+              </a>
             </nav>
           </div>
 
@@ -187,12 +201,7 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="pt-4">
-              <h4 className="text-lg font-bold mb-2">We Deliver To</h4>
-              <p className="text-background/70 text-sm">
-                Delhi NCR, Noida, Gurgaon, Faridabad, Ghaziabad and surrounding areas.
-              </p>
-            </div>
+            
           </div>
         </div>
 
@@ -203,13 +212,13 @@ export function Footer() {
               © {new Date().getFullYear()} Shri Guru Traders. All Rights Reserved.
             </p>
             <div className="flex gap-6 text-sm text-background/60">
-              <a href="#" className="hover:text-background transition-colors">
+              <a href="/privacy-policy" className="hover:text-background transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-background transition-colors">
+              <a href="/terms-conditions" className="hover:text-background transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-background transition-colors">
+              <a href="/refund-policy" className="hover:text-background transition-colors">
                 Refund Policy
               </a>
             </div>

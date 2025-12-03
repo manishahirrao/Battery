@@ -8,7 +8,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     location: "Delhi",
     rating: 5,
-    text: "Bought an Exide inverter battery for my home. Excellent service and the battery is performing great even after 2 years. Best prices in the market!",
+    text: "Bought an Exide inverter battery for my home. Excellent service and the battery is performing great. Best value in the market!",
     product: "Inverter Battery",
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Mohammed Ali",
     location: "Gurgaon",
     rating: 5,
-    text: "I run a fleet of e-rickshaws. Shri Guru Traders has been our battery supplier for 3 years. Genuine products and great after-sales support.",
+    text: "I run a fleet of e-rickshaws. Shri Guru Traders has been our battery supplier. Genuine products and great after-sales support.",
     product: "E-Rickshaw Battery",
   },
   {
@@ -36,7 +36,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="py-12 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">

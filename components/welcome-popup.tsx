@@ -16,7 +16,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
       <DialogContent className="sm:max-w-md p-0 overflow-hidden border-0">
         <DialogTitle className="sr-only">Welcome to Shri Guru Traders</DialogTitle>
         <DialogDescription className="sr-only">
-          Special offer on premium batteries with free delivery and best price guarantee
+          Special offer on premium batteries with free delivery and best value guarantee
         </DialogDescription>
         {/* Header with gradient */}
         <div className="bg-gradient-to-r from-primary to-primary/80 p-6 text-primary-foreground relative">
@@ -27,28 +27,21 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
             <X className="w-5 h-5" />
           </button>
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
-              <Zap className="w-6 h-6 text-accent-foreground" />
-            </div>
+            <img 
+              src="/logo.jpg" 
+              alt="Shri Guru Traders Logo"
+              className="w-12 h-12 rounded-lg"
+            />
             <div>
               <h2 className="text-xl font-bold">Welcome to</h2>
               <p className="text-2xl font-bold">Shri Guru Traders</p>
             </div>
           </div>
-          <p className="text-primary-foreground/90 text-sm">Your Trusted Power Partner Since 2008</p>
+          <p className="text-primary-foreground/90 text-sm">Your Trusted Power Partner</p>
         </div>
 
         {/* Content */}
         <div className="p-6 space-y-4">
-          {/* Special Offer Banner */}
-          <div className="flex items-center gap-3 p-4 bg-accent/10 rounded-lg border border-accent/20">
-            <Gift className="w-8 h-8 text-accent" />
-            <div>
-              <p className="font-bold text-foreground">Special Offer!</p>
-              <p className="text-sm text-muted-foreground">Get up to 20% off on bulk orders</p>
-            </div>
-          </div>
-
           <div className="space-y-2 text-sm text-muted-foreground">
             <p className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -60,7 +53,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
             </p>
             <p className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              Best Price Guarantee
+              Best Value Guarantee
             </p>
           </div>
 

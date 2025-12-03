@@ -24,8 +24,8 @@ const features = [
   },
   {
     icon: BadgePercent,
-    title: "Best Price Guarantee",
-    description: "Competitive pricing with price match guarantee. Special discounts on bulk orders.",
+    title: "Best Value Guarantee",
+    description: "Competitive pricing with value match guarantee. Special offers on bulk orders.",
   },
   {
     icon: RefreshCw,
@@ -46,12 +46,12 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-16 md:py-24 bg-primary">
+    <section id="why-us" className="py-12 bg-primary">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4 text-balance">
-            Why 10,000+ Customers Trust Us
+            Why 50,000+ Customers Trust Us
           </h2>
           <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-4" />
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto text-pretty">

@@ -25,14 +25,14 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 text-center lg:text-left">
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
               <Badge className="bg-accent/20 text-accent-foreground border-accent/30 px-4 py-1">
                 <Zap className="w-3 h-3 mr-1" />
-                Trusted by 10,000+ Customers
+                Trusted by 50,000+ Customers
               </Badge>
               <Badge variant="outline" className="border-green-500/30 text-green-600 px-4 py-1">
                 Up to 20% Off on Bulk Orders
@@ -100,9 +100,9 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
             <div className="flex flex-wrap gap-6 justify-center lg:justify-start pt-4 border-t border-border">
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-primary font-bold text-lg">15+</span>
+                  <span className="text-primary font-bold text-lg">Expert</span>
                 </div>
-                <span className="text-sm text-muted-foreground">Years Experience</span>
+                <span className="text-sm text-muted-foreground">Service</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
@@ -123,14 +123,11 @@ export function HeroSection({ onInquiryClick }: HeroSectionProps) {
           <div className="relative">
             <div className="relative z-10">
               <img
-                src="/professional-battery-display-with-various-car-and-.jpg"
+                src="/hero image.png"
                 alt="Premium Battery Collection"
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                style={{ maxHeight: "500px" }}
               />
-              <div className="absolute -bottom-4 -left-4 bg-card p-4 rounded-xl shadow-lg border border-border">
-                <p className="text-xs text-muted-foreground">Starting From</p>
-                <p className="text-2xl font-bold text-primary">₹800</p>
-              </div>
               <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground p-3 rounded-xl shadow-lg">
                 <p className="text-sm font-bold">Free Delivery</p>
               </div>

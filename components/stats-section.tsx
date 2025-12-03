@@ -6,27 +6,27 @@ import { Users, Package, Award, MapPin } from "lucide-react"
 const stats = [
   {
     icon: Users,
-    value: 10000,
+    value: 50000,
     suffix: "+",
     label: "Happy Customers",
   },
   {
     icon: Package,
-    value: 50000,
+    value: 25,
     suffix: "+",
-    label: "Batteries Sold",
+    label: "Battery Brands",
   },
   {
     icon: Award,
-    value: 15,
-    suffix: "+",
-    label: "Years Experience",
+    value: 24,
+    suffix: "/7",
+    label: "Customer Support",
   },
   {
     icon: MapPin,
     value: 100,
-    suffix: "+",
-    label: "Service Points",
+    suffix: "%",
+    label: "Genuine Products",
   },
 ]
 

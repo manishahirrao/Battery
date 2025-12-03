@@ -3,6 +3,8 @@
 import { Phone, MessageCircle, Menu, X, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 interface HeaderProps {
   onInquiryClick: () => void
@@ -10,10 +12,19 @@ interface HeaderProps {
 
 export function Header({ onInquiryClick }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
     setIsMobileMenuOpen(false)
+  }
+
+  const handleNavigation = (section: string) => {
+    if (pathname === '/') {
+      scrollToSection(section)
+    } else {
+      window.location.href = `/#${section}`
+    }
   }
 
   return (
@@ -21,38 +32,46 @@ export function Header({ onInquiryClick }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary">
-              <Zap className="w-6 h-6 text-primary-foreground" />
-            </div>
+          <Link href="/" className="flex items-center gap-2">
+            <img 
+              src="/logo.png" 
+              alt="Shri Guru Traders Logo"
+              className="h-10 w-auto rounded-lg"
+            />
             <div className="flex flex-col">
               <span className="text-lg md:text-xl font-bold text-primary">Shri Guru Traders</span>
               <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Your Trusted Power Partner</span>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <button
-              onClick={() => scrollToSection("hero")}
+            <Link
+              href="/"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Home
+            </Link>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              About Us
             </button>
             <button
-              onClick={() => scrollToSection("products")}
+              onClick={() => handleNavigation("products")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Products
             </button>
             <button
-              onClick={() => scrollToSection("why-us")}
+              onClick={() => handleNavigation("why-us")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Why Us
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => handleNavigation("contact")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Contact
@@ -92,26 +111,32 @@ export function Header({ onInquiryClick }: HeaderProps) {
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border animate-in slide-in-from-top-2">
             <nav className="flex flex-col gap-4">
-              <button
-                onClick={() => scrollToSection("hero")}
+              <Link
+                href="/"
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 Home
+              </Link>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                About Us
               </button>
               <button
-                onClick={() => scrollToSection("products")}
+                onClick={() => handleNavigation("products")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 Products
               </button>
               <button
-                onClick={() => scrollToSection("why-us")}
+                onClick={() => handleNavigation("why-us")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 Why Us
               </button>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => handleNavigation("contact")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 Contact
