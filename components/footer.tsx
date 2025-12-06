@@ -179,6 +179,11 @@ export function Footer() {
               </div>
             </div>
 
+            <div className="pt-4 border-t border-background/20">
+              <p className="text-background/70 text-sm">
+                <span className="font-medium text-background">GSTIN:</span> 23BGJPR7223N1ZY
+              </p>
+            </div>
             
           </div>
         </div>
