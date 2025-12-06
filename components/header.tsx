@@ -40,10 +40,7 @@ export function Header({ onInquiryClick }: HeaderProps) {
               alt="Shri Guru Traders Logo"
               className="h-10 w-auto rounded-lg"
             />
-            <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-bold text-primary">Shri Guru Traders</span>
-              <span className="text-[10px] md:text-xs text-muted-foreground -mt-1">Your Trusted Power Partner</span>
-            </div>
+         
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,43 +51,49 @@ export function Header({ onInquiryClick }: HeaderProps) {
             >
               Home
             </Link>
-            <button
-              onClick={() => scrollToSection("about")}
+            <Link
+              href="/about"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               About Us
-            </button>
-            <button
-              onClick={() => handleNavigation("products")}
+            </Link>
+            <Link
+              href="/products"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Products
-            </button>
-            <button
-              onClick={() => handleNavigation("why-us")}
+            </Link>
+            <Link
+              href="/why-us"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Why Us
-            </button>
-            <button
-              onClick={() => handleNavigation("contact")}
+            </Link>
+            <Link
+              href="/battery-scrap"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              Battery Scrap
+            </Link>
+                        <Link
+              href="/contact"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               Contact
-            </button>
+            </Link>
           </nav>
 
           {/* Contact Actions */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+9179741 46200"
               className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>+91 98765 43210</span>
+              <span>+91 79741 46200</span>
             </a>
             <a
-              href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
+              href="https://wa.me/9179741 46200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-colors"
@@ -99,7 +102,7 @@ export function Header({ onInquiryClick }: HeaderProps) {
               WhatsApp
             </a>
             <Button onClick={onInquiryClick} className="bg-primary hover:bg-primary/90">
-              Inquiry Form
+              Get a Quote
             </Button>
           </div>
 
@@ -119,38 +122,44 @@ export function Header({ onInquiryClick }: HeaderProps) {
               >
                 Home
               </Link>
-              <button
-                onClick={() => scrollToSection("about")}
+              <Link
+                href="/about"
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 About Us
-              </button>
-              <button
-                onClick={() => handleNavigation("products")}
+              </Link>
+              <Link
+                href="/products"
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 Products
-              </button>
-              <button
-                onClick={() => handleNavigation("why-us")}
+              </Link>
+              <Link
+                href="/why-us"
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 Why Us
-              </button>
-              <button
-                onClick={() => handleNavigation("contact")}
+              </Link>
+              <Link
+                href="/battery-scrap"
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Battery Scrap
+              </Link>
+                            <Link
+                href="/contact"
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
               >
                 Contact
-              </button>
+              </Link>
               <hr className="border-border" />
-              <a href="tel:+919876543210" className="flex items-center gap-2 text-sm font-medium text-foreground">
+              <a href="tel:+9179741 46200" className="flex items-center gap-2 text-sm font-medium text-foreground">
                 <Phone className="w-4 h-4" />
-                +91 98765 43210
+                +91 79741 46200
               </a>
               <div className="flex gap-2">
                 <a
-                  href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
+                  href="https://wa.me/9179741 46200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg text-sm font-medium"
@@ -159,7 +168,7 @@ export function Header({ onInquiryClick }: HeaderProps) {
                   WhatsApp
                 </a>
                 <Button onClick={onInquiryClick} className="flex-1 bg-primary">
-                  Inquiry
+                  Get a Quote
                 </Button>
               </div>
             </nav>

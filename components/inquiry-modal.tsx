@@ -20,11 +20,12 @@ const productOptions = [
   "Automotive Battery",
   "Inverter Battery",
   "Two Wheeler Battery",
-  "Truck & Bus Battery",
-  "Solar Battery",
-  "E-Rickshaw Battery",
+  "Truck / Tractor / Bus Battery",
+  "E-Rickshaw / 3-Wheeler Battery",
+  "Home Backup Solution",
+  "Solar Solution",
+  "Commercial / Industrial Power",
   "Custom Requirement",
-  "Other",
 ]
 
 export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalProps) {
@@ -63,19 +64,19 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
   return (
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto p-0" style={{ zIndex: 9999 }}>
-        <DialogTitle className="sr-only">Battery Inquiry Form</DialogTitle>
+        <DialogTitle className="sr-only">Power & Solar Solution Inquiry Form</DialogTitle>
         <DialogDescription className="sr-only">
-          Fill out the form to get a quote for your battery requirements. Our team will contact you within 30 minutes.
+          Share your basic details to get a tailored quote for batteries, inverters, solar solutions, and power backup requirements. Our team will contact you shortly.
         </DialogDescription>
         <div className="bg-primary p-5 text-primary-foreground">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
               <Zap className="w-5 h-5 text-accent-foreground" />
             </div>
-            <DialogTitle className="text-xl font-bold">Get Best Quote</DialogTitle>
+            <DialogTitle className="text-xl font-bold">Request a Custom Quote</DialogTitle>
           </div>
           <p className="text-primary-foreground/80 text-sm">
-            Fill the form below and our team will contact you within 30 minutes
+            Tell us what you need and we'll suggest the right battery, inverter or solar solution with pricing and warranty details.
           </p>
         </div>
 
@@ -84,7 +85,7 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
             <div className="py-8 text-center animate-in fade-in-0 zoom-in-95">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-foreground mb-2">Thank You!</h3>
-              <p className="text-muted-foreground">Our team will contact you within 30 minutes.</p>
+              <p className="text-muted-foreground">Our team will review your requirement and connect with you soon with the best options.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -120,18 +121,18 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-foreground">Product Type *</label>
+                <label className="text-sm font-medium text-foreground">Requirement Type *</label>
                 <Select
                   required
                   value={formData.product}
                   onValueChange={(value) => setFormData({ ...formData, product: value })}
                 >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select a product category" />
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Select your requirement type" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-background border border-border shadow-lg" style={{ zIndex: 10000 }}>
                     {productOptions.map((option) => (
-                      <SelectItem key={option} value={option}>
+                      <SelectItem key={option} value={option} className="hover:bg-accent cursor-pointer">
                         {option}
                       </SelectItem>
                     ))}
@@ -142,7 +143,7 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground">Your Requirements</label>
                 <Textarea
-                  placeholder="Tell us about your requirements (brand preference, quantity, etc.)"
+                  placeholder="Share details like application (home, shop, vehicle, industrial), approx. load / backup time, brand preference, quantity, location, etc."
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -165,9 +166,9 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
               </div>
 
               <Button type="button" variant="outline" className="w-full py-5 bg-transparent" asChild>
-                <a href="tel:+919876543210">
+                <a href="tel:+9179741 46200">
                   <Phone className="mr-2 w-4 h-4" />
-                  +91 98765 43210
+                  +91 79741 46200
                 </a>
               </Button>
             </form>

@@ -73,7 +73,7 @@ export default function TermsConditionsPage() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Delivery</h3>
                     <p className="text-muted-foreground">
-                      We offer free delivery within our service areas. Delivery times may vary based on location and product availability.
+                      We offer special discounts and promotional offers on select battery products. Delivery times may vary based on location and product availability.
                     </p>
                   </div>
                 </div>
@@ -185,8 +185,8 @@ export default function TermsConditionsPage() {
                 <div className="bg-muted p-4 rounded-lg mt-4">
                   <p className="font-medium">Shri Guru Traders</p>
                   <p>Email: info@shrigurutraders.com</p>
-                  <p>Phone: +91 98765 43210</p>
-                  <p>Address: 123 Battery Market, Main Road, City - 123456</p>
+                  <p>Phone: +91 79741 46200</p>
+                  <p>Address: Ahmedpur Kalam, Hoshangabad Road Bag Swaniya, Misrod, Bhopal - 462026 (Near By Johan Majeed)</p>
                 </div>
               </section>
 

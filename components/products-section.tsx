@@ -12,25 +12,11 @@ interface ProductsSectionProps {
 
 const products = [
   {
-    name: "Automotive Batteries",
-    image: "/car-battery-12v-high-performance-automotive.jpg",
-    description: "High-performance batteries for cars, SUVs, and sedans with superior cold cranking power",
-    features: ["12V / 35Ah - 100Ah", "Maintenance-free", "Extended Warranty", "Quick Start Technology"],
-    badge: "Best Seller",
-    applications: ["Cars", "SUVs", "Sedans", "MUVs"],
-    specs: {
-      voltage: "12V",
-      capacity: "35Ah - 100Ah",
-      warranty: "Extended Warranty",
-    },
-    route: "/batteries/automotive",
-  },
-  {
     name: "Inverter Batteries",
     image: "/tall-tubular-inverter-battery-home-backup.jpg",
     description: "Reliable tubular batteries for uninterrupted power backup for homes and offices",
     features: ["Tubular Technology", "150Ah - 220Ah", "Extended Warranty", "Low Maintenance"],
-    badge: "Popular",
+    badge: "Best Seller",
     applications: ["Homes", "Offices", "Shops", "Hospitals"],
     specs: {
       voltage: "12V",
@@ -40,7 +26,105 @@ const products = [
     route: "/batteries/inverter",
   },
   {
-    name: "Two Wheeler Batteries",
+    name: "Online UPS Systems",
+    image: "/exide-xplore.jpg",
+    description: "Advanced online UPS systems for critical power protection and seamless backup",
+    features: ["Online Technology", "Double Conversion", "Instant Switchover", "Voltage Regulation"],
+    badge: "Premium",
+    applications: ["Servers", "Data Centers", "Medical Equipment", "Critical Systems"],
+    specs: {
+      voltage: "12V / 24V",
+      capacity: "100Ah - 200Ah",
+      warranty: "Extended Warranty",
+    },
+    route: "/batteries/ups",
+  },
+  {
+    name: "Solar Panel Solutions",
+    image: "/solar-battery-deep-cycle-panel-system.jpg",
+    description: "Complete solar panel systems for rooftops with easy installation and attractive paybacks",
+    features: ["Easy Installation", "One-Stop Shop", "Low Light Performance", "PID Resistance"],
+    badge: "Eco Choice",
+    applications: ["Residential", "Commercial", "Off-Grid", "Rooftop Systems"],
+    specs: {
+      type: "Mono/Poly Crystalline",
+      capacity: "1kW - 10kW+",
+      warranty: "25 Years",
+    },
+    route: "/batteries/solar",
+  },
+  {
+    name: "Sub Station Batteries",
+    image: "/professional-battery-display-with-various-car-and-.jpg",
+    description: "Heavy-duty batteries for electrical substations and power distribution systems",
+    features: ["Industrial Grade", "High Reliability", "Long Life", "Temperature Resistant"],
+    badge: "Industrial",
+    applications: ["Power Substations", "Switchgear", "Control Panels", "Backup Systems"],
+    specs: {
+      voltage: "2V / 12V",
+      capacity: "200Ah - 1000Ah",
+      warranty: "Extended Warranty",
+    },
+    route: "/batteries/sub-station",
+  },
+  {
+    name: "4 Wheeler Batteries",
+    image: "/car-battery-12v-high-performance-automotive.jpg",
+    description: "High-performance batteries for cars, SUVs, and sedans with superior cold cranking power",
+    features: ["12V / 35Ah - 100Ah", "Maintenance-free", "Extended Warranty", "Quick Start Technology"],
+    badge: "Popular",
+    applications: ["Cars", "SUVs", "Sedans", "MUVs"],
+    specs: {
+      voltage: "12V",
+      capacity: "35Ah - 100Ah",
+      warranty: "Extended Warranty",
+    },
+    route: "/batteries/four-wheeler",
+  },
+  {
+    name: "DG Set Batteries",
+    image: "/Exide Genset XP1500.jpg",
+    description: "Specialized batteries for diesel generators and power generation equipment",
+    features: ["High Cranking Power", "Heavy Duty", "Weather Resistant", "Long Life"],
+    badge: "Heavy Duty",
+    applications: ["Generators", "DG Sets", "Power Plants", "Emergency Backup"],
+    specs: {
+      voltage: "12V / 24V",
+      capacity: "100Ah - 200Ah",
+      warranty: "Extended Warranty",
+    },
+    route: "/batteries/dg-set",
+  },
+  {
+    name: "Stackers & Forklift Batteries",
+    image: "/Exide ET Series Traction 24V.jpg",
+    description: "Traction batteries for material handling equipment and warehouse operations",
+    features: ["Deep Cycle", "High Durability", "Fast Charging", "Maintenance Free"],
+    badge: "Industrial",
+    applications: ["Forklifts", "Stackers", "Warehouse Equipment", "Material Handling"],
+    specs: {
+      voltage: "24V / 48V",
+      capacity: "200Ah - 800Ah",
+      warranty: "Extended Warranty",
+    },
+    route: "/batteries/stacker-forklift",
+  },
+  {
+    name: "Telecom Tower Batteries",
+    image: "/Exide Powersafe VRLA 2V.jpg",
+    description: "Reliable backup batteries for telecommunication towers and network infrastructure",
+    features: ["Long Backup", "Temperature Resistant", "Low Maintenance", "Remote Monitoring"],
+    badge: "Telecom Grade",
+    applications: ["Telecom Towers", "Network Equipment", "Communication Systems", "Remote Sites"],
+    specs: {
+      voltage: "12V / 24V",
+      capacity: "100Ah - 300Ah",
+      warranty: "Extended Warranty",
+    },
+    route: "/batteries/telecom",
+  },
+  {
+    name: "Bikes & Scooters Batteries",
     image: "/compact-motorcycle-bike-battery.jpg",
     description: "Compact and powerful batteries designed for bikes, scooters, and mopeds",
     features: ["Quick Start", "Vibration Resistant", "2.5Ah - 12Ah", "Sealed Design"],
@@ -51,10 +135,24 @@ const products = [
       capacity: "2.5Ah - 12Ah",
       warranty: "Extended Warranty",
     },
-    route: "/batteries/two-wheeler",
+    route: "/batteries/bike-scooter",
   },
   {
-    name: "Truck & Bus Batteries",
+    name: "3 Wheeler Batteries",
+    image: "/e-rickshaw-electric-vehicle-battery.jpg",
+    description: "Durable batteries for auto-rickshaws and three-wheeled commercial vehicles",
+    features: ["High Power", "Long Life", "All Weather", "Low Maintenance"],
+    badge: "Commercial",
+    applications: ["Auto Rickshaws", "3 Wheelers", "Commercial Vehicles", "Goods Carriers"],
+    specs: {
+      voltage: "12V",
+      capacity: "35Ah - 100Ah",
+      warranty: "Extended Warranty",
+    },
+    route: "/batteries/three-wheeler",
+  },
+  {
+    name: "Trucks & Tractors Batteries",
     image: "/heavy-duty-truck-bus-battery-large.jpg",
     description: "Heavy-duty batteries built for commercial vehicles requiring maximum power",
     features: ["High Capacity 150Ah+", "Extreme Durability", "Weather Resistant", "Long Life"],
@@ -65,35 +163,21 @@ const products = [
       capacity: "150Ah - 200Ah",
       warranty: "Extended Warranty",
     },
-    route: "/batteries/truck-bus",
+    route: "/batteries/truck-tractor",
   },
   {
-    name: "Solar Batteries",
-    image: "/solar-battery-deep-cycle-panel-system.jpg",
-    description: "Deep cycle batteries optimized for solar panel systems and renewable energy",
-    features: ["Deep Discharge", "Long Backup", "Eco-Friendly", "Low Self-Discharge"],
-    badge: "Eco Choice",
-    applications: ["Solar Systems", "Off-Grid", "Renewable Energy", "Street Lights"],
+    name: "Wind Mill Batteries",
+    image: "/Exide Xpress Ultra Truck Battery.jpg",
+    description: "Specialized batteries for wind energy storage and renewable power systems",
+    features: ["Wind Energy Storage", "Deep Cycle", "Weather Proof", "Grid Integration"],
+    badge: "Renewable",
+    applications: ["Wind Turbines", "Wind Farms", "Renewable Energy", "Power Storage"],
     specs: {
-      voltage: "12V",
-      capacity: "100Ah - 200Ah",
+      voltage: "12V / 24V",
+      capacity: "200Ah - 500Ah",
       warranty: "Extended Warranty",
     },
-    route: "/batteries/solar",
-  },
-  {
-    name: "E-Rickshaw Batteries",
-    image: "/e-rickshaw-electric-vehicle-battery.jpg",
-    description: "High-efficiency batteries for electric rickshaws with fast charging capability",
-    features: ["Fast Charging", "High Efficiency", "100+ Km Range", "1000+ Cycles"],
-    badge: "Top Rated",
-    applications: ["E-Rickshaws", "E-Carts", "Golf Carts", "E-Loaders"],
-    specs: {
-      voltage: "12V",
-      capacity: "100Ah - 150Ah",
-      warranty: "Extended Warranty",
-    },
-    route: "/batteries/e-rickshaw",
+    route: "/batteries/windmill",
   },
 ]
 
@@ -115,7 +199,7 @@ export function ProductsSection({ onInquiryClick }: ProductsSectionProps) {
         </div>
 
         {/* Products Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           {products.map((product) => (
             <Link key={product.name} href={product.route}>
               <Card
@@ -186,7 +270,7 @@ export function ProductsSection({ onInquiryClick }: ProductsSectionProps) {
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            Can{"'"}t find what you{"'"}re looking for? We have 50+ battery models available.
+            Can{"'"}t find what you{"'"}re looking for? We have 100+ battery models available across all categories.
           </p>
           <Button
             variant="outline"

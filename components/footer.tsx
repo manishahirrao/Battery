@@ -10,36 +10,6 @@ export function Footer() {
 
   return (
     <footer className="bg-foreground text-background">
-      <div className="bg-primary py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-center md:text-left">
-              <h3 className="text-xl md:text-2xl font-bold text-primary-foreground">
-                Need Help Choosing the Right Battery?
-              </h3>
-              <p className="text-primary-foreground/80">Our experts are here to help. Get free consultation today!</p>
-            </div>
-            <div className="flex gap-4">
-              <Button
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground"
-                onClick={() => scrollToSection("contact")}
-              >
-                Contact Us
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
-                asChild
-              >
-                <a href="tel:+919876543210">Call Now</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -50,7 +20,7 @@ export function Footer() {
                 alt="Shri Guru Traders Logo"
                 className="h-10 w-auto rounded-lg"
               />
-              <span className="text-xl font-bold">Shri Guru Traders</span>
+             
             </div>
             <p className="text-background/70 text-sm leading-relaxed">
               Your trusted power partner. We are authorized dealers for all major battery brands in India,
@@ -60,25 +30,33 @@ export function Footer() {
 
             <div className="flex gap-3 pt-2">
               <a
-                href="#"
+                href="https://facebook.com/shrigurutraders"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/shrigurutraders"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/@shrigurutraders"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Youtube className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/shrigurutraders"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Twitter className="w-4 h-4" />
@@ -91,19 +69,13 @@ export function Footer() {
             <h4 className="text-lg font-bold">Contact Us</h4>
             <div className="space-y-3">
               <a
-                href="tel:+919876543210"
+                href="tel:+9179741 46200"
                 className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
               >
                 <Phone className="w-4 h-4 text-accent" />
-                +91 98765 43210
+                +91 79741 46200
               </a>
-              <a
-                href="tel:+919876543211"
-                className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
-              >
-                <Phone className="w-4 h-4 text-accent" />
-                +91 98765 43211
-              </a>
+            
               <a
                 href="mailto:info@shrigurutraders.com"
                 className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
@@ -114,9 +86,9 @@ export function Footer() {
               <div className="flex items-start gap-3 text-background/70 text-sm">
                 <MapPin className="w-4 h-4 text-accent mt-0.5" />
                 <span>
-                  123 Battery Market,
+                  Ahmedpur Kalam, Hoshangabad Road Bag Swaniya,
                   <br />
-                  Main Road, City - 123456
+                  Misrod, Bhopal - 462026 (Near By Johan Majeed)
                 </span>
               </div>
             </div>
@@ -167,16 +139,22 @@ export function Footer() {
                 Inverter Batteries
               </a>
               <a href="/batteries/solar" className="block text-background/70 hover:text-background transition-colors text-sm">
-                Solar Batteries
+                Solar Solutions
               </a>
-              <a href="/batteries/e-rickshaw" className="block text-background/70 hover:text-background transition-colors text-sm">
+              <a href="/batteries/three-wheeler" className="block text-background/70 hover:text-background transition-colors text-sm">
                 E-Rickshaw Batteries
               </a>
               <a href="/batteries/two-wheeler" className="block text-background/70 hover:text-background transition-colors text-sm">
                 Two Wheeler Batteries
               </a>
-              <a href="/batteries/truck-bus" className="block text-background/70 hover:text-background transition-colors text-sm">
-                Truck & Bus Batteries
+              <a href="/batteries/truck-tractor" className="block text-background/70 hover:text-background transition-colors text-sm">
+                Truck & Tractor Batteries
+              </a>
+              <a href="/batteries/ups" className="block text-background/70 hover:text-background transition-colors text-sm">
+                UPS Batteries
+              </a>
+              <a href="/batteries/telecom" className="block text-background/70 hover:text-background transition-colors text-sm">
+                Telecom Batteries
               </a>
             </nav>
           </div>

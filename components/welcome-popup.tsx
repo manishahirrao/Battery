@@ -16,7 +16,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
       <DialogContent className="sm:max-w-md p-0 overflow-hidden border-0" style={{ zIndex: 9999 }}>
         <DialogTitle className="sr-only">Welcome to Shri Guru Traders</DialogTitle>
         <DialogDescription className="sr-only">
-          Special offer on premium batteries with free delivery and best value guarantee
+          Special offer on premium batteries with exclusive discounts and best value guarantee
         </DialogDescription>
         {/* Header with gradient */}
         <div className="bg-gradient-to-r from-primary to-primary/80 p-6 text-primary-foreground relative">
@@ -68,7 +68,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
             </Button>
             <Button variant="outline" onClick={onClose} className="w-full py-5 bg-transparent">
               <Phone className="mr-2 w-4 h-4" />
-              Call: +91 98765 43210
+              Call: +91 79741 46200
             </Button>
           </div>
 

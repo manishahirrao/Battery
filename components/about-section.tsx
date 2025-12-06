@@ -62,75 +62,94 @@ export function AboutSection() {
   ]
 
   return (
-    <section id="about" className="py-12 bg-muted/50">
+    <section id="about" className="py-16 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+        <div className="text-center max-w-5xl mx-auto mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             About Shri Guru Traders
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Your trusted power partner, providing premium battery solutions 
-            with unmatched quality and service.
+          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            For over 5 years, we have been India's most trusted authorized battery dealer, 
+            delivering premium power solutions with uncompromising quality and exceptional service.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Badge variant="secondary" className="text-sm py-2 px-4">
-              <Users className="w-4 h-4 mr-2" />
-              50,000+ Happy Customers
-            </Badge>
-            <Badge variant="secondary" className="text-sm py-2 px-4">
-              <Zap className="w-4 h-4 mr-2" />
-              100% Genuine Products
-            </Badge>
-            <Badge variant="secondary" className="text-sm py-2 px-4">
-              <Truck className="w-4 h-4 mr-2" />
-              Fast Delivery
-            </Badge>
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="bg-primary/10 px-6 py-3 rounded-full">
+              <div className="flex items-center gap-2 text-primary font-semibold">
+                <Users className="w-5 h-5" />
+                10,000+ Satisfied Customers
+              </div>
+            </div>
+            <div className="bg-accent/20 px-6 py-3 rounded-full">
+              <div className="flex items-center gap-2 text-accent-foreground font-semibold">
+                <Zap className="w-5 h-5" />
+                100% Genuine Products
+              </div>
+            </div>
+            <div className="bg-green-500/10 px-6 py-3 rounded-full">
+              <div className="flex items-center gap-2 text-green-600 font-semibold">
+                <Award className="w-5 h-5" />
+                ISO Certified Company
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Our Story */}
-        <div className="max-w-4xl mx-auto mb-20">
-        
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p className="text-muted-foreground mb-4">
-                Shri Guru Traders began as a small battery retail shop with a simple mission: 
-                to provide reliable power solutions to our community. Over the years, we've grown into one of the 
-                most trusted battery suppliers in the region.
+        <div className="max-w-6xl mx-auto mb-24">
+          <h3 className="text-3xl font-bold text-center mb-12">Our Journey of Excellence</h3>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Founded in 2019, Shri Guru Traders began as a humble battery retail shop with a singular vision: 
+                to provide reliable, genuine power solutions to our community. What started as a small family business 
+                has blossomed into one of India's most respected authorized battery dealers.
               </p>
-              <p className="text-muted-foreground mb-4">
-                Our journey has been driven by commitment to quality, customer satisfaction, and innovation. 
-                We've adapted to changing market needs while maintaining our core values of integrity and excellence.
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Our growth story is built on three pillars: <strong>uncompromising quality</strong>, 
+                <strong>customer-centric service</strong>, and <strong>technical expertise</strong>. 
+                We've evolved from a single outlet to a comprehensive battery solutions provider, 
+                serving diverse sectors from automotive to industrial.
               </p>
-              <p className="text-muted-foreground">
-                Today, we serve thousands of customers across automotive, industrial, and residential sectors, 
-                offering a comprehensive range of batteries from leading manufacturers with genuine warranties 
-                and reliable after-sales support.
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Today, we stand proud as authorized partners for over 15 premium battery brands, 
+                with a state-of-the-art facility and a team of certified experts dedicated to powering 
+                India's progress, one battery at a time.
               </p>
+              <div className="bg-primary/5 p-6 rounded-xl border-l-4 border-primary">
+                <p className="text-primary font-semibold text-lg mb-2">Our Mission</p>
+                <p className="text-muted-foreground">
+                  To deliver authentic battery solutions with exceptional service, ensuring every customer 
+                  experiences reliable power and complete peace of mind.
+                </p>
+              </div>
             </div>
             <div className="relative">
               <img 
                 src="/our story.png" 
                 alt="Our Story - Shri Guru Traders Journey"
-                className="w-full h-auto rounded-2xl shadow-lg object-cover lg:max-h-[400px] md:max-h-[350px] max-h-[250px]"
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover lg:max-h-[500px] md:max-h-[400px] max-h-[300px]"
               />
+              <div className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground p-4 rounded-xl shadow-lg">
+                <p className="font-bold text-lg">Since 2019</p>
+                <p className="text-sm">5+ Years of Excellence</p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Our Expertise */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center mb-12">Our Expertise</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="mb-24">
+          <h3 className="text-3xl font-bold text-center mb-16">Comprehensive Battery Solutions</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {expertise.map((item, index) => (
-              <Card key={index}>
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-card to-muted/20">
+                <CardContent className="pt-8 pb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     {item.icon}
                   </div>
-                  <h4 className="font-semibold mb-2">{item.title}</h4>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <h4 className="text-xl font-bold mb-3 text-foreground">{item.title}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -138,17 +157,17 @@ export function AboutSection() {
         </div>
 
         {/* Core Values */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center mb-12">Our Core Values</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="mb-24">
+          <h3 className="text-3xl font-bold text-center mb-16">Our Core Values</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {values.map((value, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+              <Card key={index} className="text-center group hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-card to-muted/20">
+                <CardContent className="pt-8 pb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     {value.icon}
                   </div>
-                  <h4 className="font-semibold mb-2">{value.title}</h4>
-                  <p className="text-sm text-muted-foreground">{value.description}</p>
+                  <h4 className="text-xl font-bold mb-3 text-foreground">{value.title}</h4>
+                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -156,24 +175,28 @@ export function AboutSection() {
         </div>
 
         {/* Stats */}
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-12">By the Numbers</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50,000+</div>
-              <p className="text-muted-foreground">Happy Customers</p>
+        <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-12">
+          <h3 className="text-3xl font-bold text-center mb-16">Our Impact by Numbers</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center group">
+              <div className="text-5xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform">10,000+</div>
+              <p className="text-lg text-muted-foreground font-medium">Happy Customers</p>
+              <p className="text-sm text-muted-foreground mt-1">Across India</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">25+</div>
-              <p className="text-muted-foreground">Battery Brands</p>
+            <div className="text-center group">
+              <div className="text-5xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform">15+</div>
+              <p className="text-lg text-muted-foreground font-medium">Premium Brands</p>
+              <p className="text-sm text-muted-foreground mt-1">Authorized Partners</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-              <p className="text-muted-foreground">Customer Support</p>
+            <div className="text-center group">
+              <div className="text-5xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform">5+</div>
+              <p className="text-lg text-muted-foreground font-medium">Years Experience</p>
+              <p className="text-sm text-muted-foreground mt-1">Industry Leadership</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">100%</div>
-              <p className="text-muted-foreground">Genuine Products</p>
+            <div className="text-center group">
+              <div className="text-5xl font-bold text-primary mb-3 group-hover:scale-110 transition-transform">24/7</div>
+              <p className="text-lg text-muted-foreground font-medium">Customer Support</p>
+              <p className="text-sm text-muted-foreground mt-1">Always Available</p>
             </div>
           </div>
         </div>

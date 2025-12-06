@@ -141,8 +141,8 @@ export default function PrivacyPolicyPage() {
                 <div className="bg-muted p-4 rounded-lg mt-4">
                   <p className="font-medium">Shri Guru Traders</p>
                   <p>Email: info@shrigurutraders.com</p>
-                  <p>Phone: +91 98765 43210</p>
-                  <p>Address: 123 Battery Market, Main Road, City - 123456</p>
+                  <p>Phone: +91 79741 46200</p>
+                  <p>Address: Ahmedpur Kalam, Hoshangabad Road Bag Swaniya, Misrod, Bhopal - 462026 (Near By Johan Majeed)</p>
                 </div>
               </section>
 
