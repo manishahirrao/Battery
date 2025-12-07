@@ -70,7 +70,7 @@ export default function ContactPage() {
                 <Phone className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Phone Support</h3>
-              <p className="text-primary font-medium mb-1">+91 79741 46200</p>
+              <p className="text-primary font-medium mb-1">+91 7974146200</p>
               <p className="text-muted-foreground text-sm">Available 24/7</p>
             </div>
 
@@ -79,7 +79,7 @@ export default function ContactPage() {
                 <MessageCircle className="w-8 h-8 text-green-500" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
-              <p className="text-green-600 font-medium mb-1">+91 79741 46200</p>
+              <p className="text-green-600 font-medium mb-1">+91 7974146200</p>
               <p className="text-muted-foreground text-sm">Instant Response</p>
             </div>
 
@@ -161,7 +161,7 @@ export default function ContactPage() {
               
               <div className="mt-6 p-4 bg-primary/10 rounded-xl">
                 <p className="text-sm text-primary font-medium text-center">
-                  Need urgent assistance? Call us at +91 79741 46200 for immediate support
+                  Need urgent assistance? Call us at +91 7974146200 for immediate support
                 </p>
               </div>
             </div>

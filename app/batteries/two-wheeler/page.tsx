@@ -44,12 +44,6 @@ export default function TwoWheelerBatteriesPage() {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-b from-primary/10 to-background">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-4 mb-6">
-            <Link href="/#products" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Products
-            </Link>
-          </div>
           
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
@@ -161,7 +155,7 @@ export default function TwoWheelerBatteriesPage() {
                         Get Quote
                       </Button>
                       <a
-                        href={`https://wa.me/9179741 46200?text=Hi,%20I'm%20interested%20in%20${encodeURIComponent(battery.name)}%20battery`}
+                        href={`https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20${encodeURIComponent(battery.name)}%20battery`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1"

@@ -166,9 +166,9 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
               </div>
 
               <Button type="button" variant="outline" className="w-full py-5 bg-transparent" asChild>
-                <a href="tel:+9179741 46200">
+                <a href="tel:+917974146200">
                   <Phone className="mr-2 w-4 h-4" />
-                  +91 79741 46200
+                  +91 7974146200
                 </a>
               </Button>
             </form>

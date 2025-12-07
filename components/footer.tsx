@@ -69,19 +69,19 @@ export function Footer() {
             <h4 className="text-lg font-bold">Contact Us</h4>
             <div className="space-y-3">
               <a
-                href="tel:+9179741 46200"
+                href="tel:+917974146200"
                 className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
               >
                 <Phone className="w-4 h-4 text-accent" />
-                +91 79741 46200
+                +91 7974146200
               </a>
             
               <a
-                href="mailto:info@shrigurutraders.com"
+                href="mailto:shrigurutraders001@gmail.com"
                 className="flex items-center gap-3 text-background/70 hover:text-background transition-colors text-sm"
               >
                 <Mail className="w-4 h-4 text-accent" />
-                info@shrigurutraders.com
+                shrigurutraders001@gmail.com
               </a>
               <div className="flex items-start gap-3 text-background/70 text-sm">
                 <MapPin className="w-4 h-4 text-accent mt-0.5" />
@@ -98,36 +98,30 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-bold">Quick Links</h4>
             <nav className="space-y-2">
-              <button
-                onClick={() => scrollToSection("hero")}
+              <a
+                href="/"
                 className="block text-background/70 hover:text-background transition-colors text-sm"
               >
                 Home
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
+              </a>
+              <a
+                href="/about"
                 className="block text-background/70 hover:text-background transition-colors text-sm"
               >
                 About
-              </button>
-              <button
-                onClick={() => scrollToSection("products")}
-                className="block text-background/70 hover:text-background transition-colors text-sm"
-              >
-                Products
-              </button>
-              <button
-                onClick={() => scrollToSection("why-us")}
+              </a>
+              <a
+                href="/why-us"
                 className="block text-background/70 hover:text-background transition-colors text-sm"
               >
                 Why Choose Us
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+              </a>
+              <a
+                href="/contact"
                 className="block text-background/70 hover:text-background transition-colors text-sm"
               >
                 Contact
-              </button>
+              </a>
             </nav>
 
             <h4 className="text-lg font-bold pt-4">Products</h4>

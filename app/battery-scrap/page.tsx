@@ -76,35 +76,40 @@ export default function BatteryScrapPage() {
     <main className="min-h-screen">
       <Header onInquiryClick={openModal} />
       
-      {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-b from-primary/10 to-background">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-4 mb-6">
-            <Link href="/" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Home
-            </Link>
-          </div>
-          
+      {/* Hero Section with Background Image */}
+      <section className="relative min-h-[80vh] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/scrap.png" 
+            alt="Battery Scrap Collection" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4">
+                    
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">Battery Scrap Business</Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <Badge className="mb-6 bg-white/20 text-white border-white/30 backdrop-blur-sm">Battery Scrap Business</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               We Buy Used Lead Acid Batteries
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto">
               Shri Guru Traders is a trusted battery scrap buyer in India. We purchase all types of used lead acid battery scraps, 
               battery plates, and soft lead materials at the best market prices with safe and environmentally compliant processes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={openModal} size="lg" className="bg-primary hover:bg-primary/90">
+              <Button onClick={openModal} size="lg" className="bg-white text-black hover:bg-white/90 font-semibold">
                 Sell Your Battery Scrap
               </Button>
               <a
-                href="tel:+9179741 46200"
-                className="inline-flex items-center justify-center px-6 py-3 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-lg text-sm font-medium transition-colors"
+                href="tel:+917974146200"
+                className="inline-flex items-center justify-center px-6 py-3 border border-white/30 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition-colors backdrop-blur-sm"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                Call Now: +91 79741 46200
+                Call Now: +91 7974146200
               </a>
             </div>
           </div>
@@ -264,11 +269,11 @@ export default function BatteryScrapPage() {
               Get Quote Now
             </Button>
             <a
-              href="tel:+9179741 46200"
+              href="tel:+917974146200"
               className="inline-flex items-center justify-center px-6 py-3 border border-primary-foreground/20 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-lg text-sm font-medium transition-colors"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Call: +91 79741 46200
+              Call: +91 7974146200
             </a>
           </div>
         </div>

@@ -68,7 +68,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
             </Button>
             <Button variant="outline" onClick={onClose} className="w-full py-5 bg-transparent">
               <Phone className="mr-2 w-4 h-4" />
-              Call: +91 79741 46200
+              Call: +91 7974146200
             </Button>
           </div>
 

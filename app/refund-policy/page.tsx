@@ -240,8 +240,8 @@ export default function RefundPolicyPage() {
                 </p>
                 <div className="bg-muted p-4 rounded-lg mt-4">
                   <p className="font-medium">Shri Guru Traders</p>
-                  <p>Email: info@shrigurutraders.com</p>
-                  <p>Phone: +91 79741 46200</p>
+                  <p>Email: shrigurutraders001@gmail.com</p>
+                  <p>Phone: +91 7974146200</p>
                   <p>Address: Ahmedpur Kalam, Hoshangabad Road Bag Swaniya, Misrod, Bhopal - 462026 (Near By Johan Majeed)</p>
                   <p className="mt-2 text-sm">Please include "Refund Request" in your email subject</p>
                 </div>

@@ -78,7 +78,7 @@ export function InquirySection() {
               </p>
               <div className="bg-green-100 rounded-xl p-4 max-w-md mx-auto">
                 <p className="text-green-800 font-medium text-sm">
-                  For urgent assistance, call us directly at: <span className="text-green-600 font-bold">+91 79741 46200</span>
+                  For urgent assistance, call us directly at: <span className="text-green-600 font-bold">+91 7974146200</span>
                 </p>
               </div>
             </div>
@@ -107,7 +107,7 @@ export function InquirySection() {
                     <Input
                       required
                       type="tel"
-                      placeholder="+91 79741 46200"
+                      placeholder="+91 7974146200"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="bg-input border-border h-12 text-base rounded-xl focus:ring-2 focus:ring-primary/20"

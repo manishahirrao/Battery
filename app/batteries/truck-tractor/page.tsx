@@ -17,7 +17,7 @@ const truckTractorBatteries = [
     id: "exide-jai-kisan",
     name: "Exide Jai Kisan",
     brand: "Exide",
-    image: "/Exide Jai Kisan.jpeg",
+    image: "/Exide Jai Kisan.jpg",
     rating: 4.6,
     capacity: "120Ah",
     voltage: "12V",
@@ -28,24 +28,10 @@ const truckTractorBatteries = [
     detailedDescription: "The Jai Kisan battery is specifically designed for agricultural applications with reliable performance for tractors and farm equipment. Its robust construction ensures durability in rural and farming environments. The cost-effective design provides excellent value for agricultural applications."
   },
   {
-    id: "exide-jai-kisan-gold",
-    name: "Exide Jai Kisan Gold",
-    brand: "Exide",
-    image: "/Exide Jai Kisan Gold.jpeg",
-    rating: 4.8,
-    capacity: "135Ah",
-    voltage: "12V",
-    warranty: "48 Months",
-    features: ["Jai Kisan Gold", "Premium Agricultural", "Extended Life", "Heavy Duty"],
-    applications: ["Heavy Tractors", "Farm Equipment", "Agricultural Machinery", "Rural Commercial"],
-    description: "Exide Jai Kisan Gold offers premium performance for heavy agricultural applications.",
-    detailedDescription: "The Jai Kisan Gold battery provides premium performance with heavy-duty construction for heavy agricultural applications. Its extended service life and reliable performance make it ideal for demanding farm equipment. The premium construction ensures exceptional durability in harsh agricultural environments."
-  },
-  {
     id: "exide-xpress-xp1600",
     name: "Exide Xpress XP1600",
     brand: "Exide",
-    image: "/Exide Xpress XP1600.jpeg",
+    image: "/Exide Xpress XP1600.jpg",
     rating: 4.7,
     capacity: "160Ah",
     voltage: "12V",
@@ -56,94 +42,10 @@ const truckTractorBatteries = [
     detailedDescription: "The Xpress XP1600 battery features advanced Xpress technology with high capacity for medium truck applications. Its quick start capability ensures reliable ignition in all conditions. The reliable performance makes it ideal for commercial vehicles and delivery fleets."
   },
   {
-    id: "exide-xpress-xp1800",
-    name: "Exide Xpress XP1800",
-    brand: "Exide",
-    image: "/Exide Xpress XP1800.jpeg",
-    rating: 4.8,
-    capacity: "180Ah",
-    voltage: "12V",
-    warranty: "48 Months",
-    features: ["Xpress Technology", "Maximum Power", "Extended Warranty", "Premium"],
-    applications: ["Heavy Trucks", "Commercial Vehicles", "Long Haul Trucks", "Heavy Duty"],
-    description: "Exide Xpress XP1800 delivers maximum power for heavy truck applications.",
-    detailedDescription: "The Xpress XP1800 battery represents maximum power with premium Xpress technology for heavy truck applications. Its extended warranty and premium construction provide maximum reliability for long haul operations. The maximum power capability ensures excellent performance in demanding commercial applications."
-  },
-  {
-    id: "exide-xpress-hd1000",
-    name: "Exide Xpress HD1000",
-    brand: "Exide",
-    image: "/TruckTractor_XpressHD1000.png",
-    rating: 4.7,
-    capacity: "100Ah",
-    voltage: "12V",
-    warranty: "36 Months",
-    features: ["Xpress HD", "Heavy Duty", "Durable", "High Performance"],
-    applications: ["Light Trucks", "Commercial Vehicles", "Utility Trucks", "Service Vehicles"],
-    description: "Exide Xpress HD1000 is a heavy-duty battery for light truck and commercial applications.",
-    detailedDescription: "The Xpress HD1000 battery features heavy-duty construction with high performance for light truck and commercial applications. Its durable design ensures reliable performance in demanding service conditions. The heavy-duty construction provides excellent resistance to vibration and harsh operating environments."
-  },
-  {
-    id: "exide-gold-heavy-duty",
-    name: "Exide Gold Heavy Duty",
-    brand: "Exide",
-    image: "/Exide Gold Heavy Duty.jpeg",
-    rating: 4.8,
-    capacity: "150Ah",
-    voltage: "12V",
-    warranty: "54 Months",
-    features: ["Gold Series", "Heavy Duty", "Premium Grade", "Extended Life"],
-    applications: ["Heavy Trucks", "Commercial Vehicles", "Industrial Trucks", "Long Haul"],
-    description: "Exide Gold Heavy Duty is a premium-grade battery for heavy commercial truck applications.",
-    detailedDescription: "The Gold Heavy Duty battery represents premium-grade Gold series technology with heavy-duty construction for commercial truck applications. Its extended service life and reliable performance make it ideal for heavy trucks and long haul operations. The premium construction ensures exceptional durability in demanding commercial environments."
-  },
-  {
-    id: "exide-el-heavy-commercial",
-    name: "Exide EL Heavy Commercial",
-    brand: "Exide",
-    image: "/Exide EL Heavy Commercial.webp",
-    rating: 4.7,
-    capacity: "170Ah",
-    voltage: "12V",
-    warranty: "48 Months",
-    features: ["EL Technology", "Heavy Commercial", "High Performance", "Reliable"],
-    applications: ["Commercial Trucks", "Heavy Vehicles", "Industrial Applications", "Transport"],
-    description: "Exide EL Heavy Commercial is designed for heavy commercial vehicle applications.",
-    detailedDescription: "The EL Heavy Commercial battery features advanced EL technology with high performance for heavy commercial vehicle applications. Its reliable performance ensures consistent power delivery for demanding transport operations. The heavy commercial design provides excellent durability and long service life."
-  },
-  {
-    id: "exide-rangemaster-truck-series",
-    name: "Exide RangeMaster Truck Series",
-    brand: "Exide",
-    image: "/Exide RangeMaster Truck Series.webp",
-    rating: 4.9,
-    capacity: "200Ah",
-    voltage: "12V",
-    warranty: "60 Months",
-    features: ["RangeMaster Technology", "Extended Range", "Premium", "Ultra Reliable"],
-    applications: ["Long Haul Trucks", "Heavy Commercial", "Transport Fleets", "Industrial Trucks"],
-    description: "Exide RangeMaster Truck Series offers extended range for long haul truck applications.",
-    detailedDescription: "The RangeMaster Truck Series battery features advanced RangeMaster technology with extended range for long haul truck applications. Its ultra-reliable performance ensures consistent power delivery for demanding transport operations. The extended range capability provides excellent performance for long-distance commercial vehicles."
-  },
-  {
-    id: "exide-mega-150ah-truck",
-    name: "Exide Mega 150Ah Truck",
-    brand: "Exide",
-    image: "/Exide Mega 150Ah Truck.jpeg",
-    rating: 4.8,
-    capacity: "150Ah",
-    voltage: "12V",
-    warranty: "48 Months",
-    features: ["Mega Technology", "High Capacity", "Heavy Duty", "Reliable"],
-    applications: ["Medium Trucks", "Commercial Vehicles", "Transport", "Delivery Fleets"],
-    description: "Exide Mega 150Ah Truck provides high capacity for medium truck applications.",
-    detailedDescription: "The Mega 150Ah Truck battery features Mega technology with high capacity for medium truck applications. Its heavy-duty construction ensures reliable performance in demanding commercial environments. The high capacity design provides excellent power delivery for transport and delivery fleet operations."
-  },
-  {
     id: "exide-xpress-ultra-truck-battery",
     name: "Exide Xpress Ultra Truck Battery",
     brand: "Exide",
-    image: "/Exide Xpress Ultra Truck Battery.webp",
+    image: "/Exide Xpress Ultra Truck Battery.jpg",
     rating: 4.9,
     capacity: "220Ah",
     voltage: "12V",
@@ -171,12 +73,6 @@ export default function TruckTractorBatteriesPage() {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-b from-primary/10 to-background">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-4 mb-6">
-            <Link href="/#products" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Products
-            </Link>
-          </div>
           
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
@@ -260,7 +156,7 @@ export default function TruckTractorBatteriesPage() {
                         Get Quote
                       </Button>
                       <a
-                        href={`https://wa.me/9179741 46200?text=Hi,%20I'm%20interested%20in%20${encodeURIComponent(battery.name)}%20battery`}
+                        href={`https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20${encodeURIComponent(battery.name)}%20battery`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl font-semibold transition-all duration-300"

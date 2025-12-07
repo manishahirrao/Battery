@@ -54,7 +54,59 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-20 bg-background relative overflow-hidden">
+    <>
+      {/* Hero Section with Image */}
+      <section className="relative min-h-[60vh] flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/why%20us.png" 
+            alt="Why Choose Us" 
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              console.error('Image failed to load:', e);
+              e.currentTarget.src = '/placeholder.jpg';
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+        </div>
+        
+        {/* Hero Content */}
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+              <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+              Why Choose Us
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Why <span className="text-primary">10,000+</span> Customers Trust Us
+            </h1>
+            <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+              We're committed to delivering exceptional battery solutions with unmatched service quality, 
+              genuine products, and customer satisfaction that speaks for itself across India.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:+917974146200"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Call Now: +91 7974146200
+              </a>
+              <a
+                href="https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section id="why-us-content" className="py-20 bg-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -66,21 +118,7 @@ export function WhyChooseUs() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-            <span className="font-semibold">Why Choose Us</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-            Why <span className="text-primary">10,000+</span> Customers Trust Us
-          </h2>
-          <div className="w-32 h-1.5 bg-primary mx-auto rounded-full mb-8" />
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            We're committed to delivering exceptional battery solutions with unmatched service quality, 
-            genuine products, and customer satisfaction that speaks for itself across India.
-          </p>
-        </div>
+       
 
         {/* Introduction Section */}
         <div className="max-w-4xl mx-auto mb-20">
@@ -205,7 +243,7 @@ export function WhyChooseUs() {
                 href="tel:+917974146200"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
-                Call Now: +91 79741 46200
+                Call Now: +91 7974146200
               </a>
               <a
                 href="https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
@@ -234,6 +272,7 @@ export function WhyChooseUs() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   )
 }

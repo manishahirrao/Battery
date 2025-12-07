@@ -41,35 +41,7 @@ const fourWheelerBatteries = [
     description: "Exide EPIQ DIN60 is a premium-grade battery offering superior performance for luxury vehicles.",
     detailedDescription: "The EPIQ DIN60 battery represents premium-grade technology with advanced design for superior performance. Its premium construction ensures exceptional reliability and consistent power delivery for high-end vehicles. The advanced technology provides excellent charge acceptance and deep discharge recovery."
   },
-  {
-    id: "exide-epiq-35l",
-    name: "Exide EPIQ 35L",
-    brand: "Exide",
-    image: "/Exide EPIQ 35L.jpg",
-    rating: 4.7,
-    capacity: "35Ah",
-    voltage: "12V",
-    warranty: "42 Months",
-    features: ["EPIQ Technology", "Compact Design", "High Efficiency", "Reliable"],
-    applications: ["Compact Cars", "Hatchbacks", "Small Sedans", "City Cars"],
-    description: "Exide EPIQ 35L combines premium EPIQ technology with compact design for small vehicles.",
-    detailedDescription: "The EPIQ 35L battery features premium EPIQ technology in a compact design optimized for small vehicles. Its high efficiency ensures optimal power utilization while maintaining reliable performance. The compact size makes it perfect for vehicles with limited battery space."
-  },
-  {
-    id: "exide-matrix-red-din74",
-    name: "Exide Matrix Red DIN74",
-    brand: "Exide",
-    image: "/Exide Matrix Red DIN74.png",
-    rating: 4.8,
-    capacity: "65Ah",
-    voltage: "12V",
-    warranty: "48 Months",
-    features: ["Matrix Red", "Heavy Duty", "High Power", "Long Life"],
-    applications: ["Large SUVs", "MUVs", "Premium Sedans", "Commercial Vehicles"],
-    description: "Exide Matrix Red DIN74 is a heavy-duty battery providing high power for large vehicles.",
-    detailedDescription: "The Matrix Red DIN74 battery features heavy-duty construction with high power output for demanding applications. Its advanced Matrix Red technology ensures exceptional durability and long service life. The high power capability makes it ideal for vehicles with extensive electrical systems."
-  },
-  {
+    {
     id: "exide-gold-35ah",
     name: "Exide Gold 35Ah",
     brand: "Exide",
@@ -97,21 +69,7 @@ const fourWheelerBatteries = [
     description: "Exide Marathon Max 35L is designed for extended life and durability in compact vehicles.",
     detailedDescription: "The Marathon Max 35L battery features extended life technology with durable construction for long service life. Its high-performance design ensures reliable power delivery for compact vehicles. The Marathon Max technology provides excellent resistance to vibration and harsh conditions."
   },
-  {
-    id: "exide-xpress-xp95",
-    name: "Exide Xpress XP95",
-    brand: "Exide",
-    image: "/Exide Xpress XP95.jpg",
-    rating: 4.9,
-    capacity: "50Ah",
-    voltage: "12V",
-    warranty: "60 Months",
-    features: ["Xpress Series", "Premium Power", "Extended Warranty", "Ultra Reliable"],
-    applications: ["Large Sedans", "SUVs", "Premium Cars", "High-end Vehicles"],
-    description: "Exide Xpress XP95 is a premium power battery with extended warranty for high-end vehicles.",
-    detailedDescription: "The Xpress XP95 battery represents the pinnacle of Xpress technology with premium power output and extended warranty. Its ultra-reliable performance ensures consistent power delivery for demanding applications. The extended warranty period provides maximum peace of mind for premium vehicle owners."
-  }
-]
+  ]
 
 export default function FourWheelerBatteriesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -129,13 +87,7 @@ export default function FourWheelerBatteriesPage() {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-b from-primary/10 to-background">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-4 mb-6">
-            <Link href="/#products" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Products
-            </Link>
-          </div>
-          
+                    
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               4-Wheeler Batteries
@@ -218,7 +170,7 @@ export default function FourWheelerBatteriesPage() {
                         Get Quote
                       </Button>
                       <a
-                        href={`https://wa.me/9179741 46200?text=Hi,%20I'm%20interested%20in%20${encodeURIComponent(battery.name)}%20battery`}
+                        href={`https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20${encodeURIComponent(battery.name)}%20battery`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl font-semibold transition-all duration-300"
