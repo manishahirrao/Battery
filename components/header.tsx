@@ -1,3 +1,5 @@
+
+// HEADER COMPONENT - Mobile Optimized
 "use client"
 
 import { Phone, MessageCircle, Menu, X, Zap, ChevronDown } from "lucide-react"
@@ -54,22 +56,22 @@ export function Header({ onInquiryClick }: HeaderProps) {
 
   return (
     <header 
-     style={{  zIndex: 2000 }}
-    className="sticky top-0 z-80 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-      <div className="container mx-auto px-4">
+      style={{ zIndex: 2000 }}
+      className="sticky top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border"
+    >
+      <div className="w-full px-4 sm:px-6 lg:container lg:mx-auto">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <img 
               src="/logo.png" 
               alt="Shri Guru Traders Logo"
-              className="h-10 w-auto rounded-lg"
+              className="h-8 sm:h-10 w-auto rounded-lg"
             />
-         
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             <Link
               href="/"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
@@ -98,37 +100,21 @@ export function Header({ onInquiryClick }: HeaderProps) {
                 onMouseEnter={handleDropdownMouseEnter}
                 onMouseLeave={handleDropdownMouseLeave}
               >
-                <div className="py-2">
+                <div className="py-2 max-h-[70vh] overflow-y-auto">
                   {/* Automotive Batteries Section */}
                   <div className="px-4 py-2">
                     <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Automotive Batteries</div>
                     <div className="space-y-1">
-                      <Link
-                        href="/batteries/four-wheeler"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/four-wheeler" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         4 Wheeler Batteries
                       </Link>
-                      <Link
-                        href="/batteries/bike-scooter"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/bike-scooter" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Bikes & Scooters Batteries
                       </Link>
-                      <Link
-                        href="/batteries/three-wheeler"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/three-wheeler" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         3 Wheeler Batteries
                       </Link>
-                      <Link
-                        href="/batteries/truck-tractor"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/truck-tractor" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Trucks & Tractors Batteries
                       </Link>
                     </div>
@@ -140,46 +126,22 @@ export function Header({ onInquiryClick }: HeaderProps) {
                   <div className="px-4 py-2">
                     <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Inverter & UPS Batteries</div>
                     <div className="space-y-1">
-                      <Link
-                        href="/batteries/inverter"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/inverter" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Inverter Batteries
                       </Link>
-                      <Link
-                        href="/batteries/ups"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/ups" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Online UPS Systems
                       </Link>
-                      <Link
-                        href="/batteries/dg-set"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/dg-set" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         DG Set Batteries
                       </Link>
-                      <Link
-                        href="/batteries/sub-station"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/sub-station" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Sub Station Batteries
                       </Link>
-                      <Link
-                        href="/batteries/telecom"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/telecom" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Telecom Tower Batteries
                       </Link>
-                      <Link
-                        href="/batteries/stacker-forklift"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/stacker-forklift" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Stackers & Forklift Batteries
                       </Link>
                     </div>
@@ -191,77 +153,52 @@ export function Header({ onInquiryClick }: HeaderProps) {
                   <div className="px-4 py-2">
                     <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Solar Solutions</div>
                     <div className="space-y-1">
-                      <Link
-                        href="/batteries/solar"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/solar" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Solar Panel Solutions
                       </Link>
-                      <Link
-                        href="/batteries/solar-inverters"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/solar-inverters" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Solar Inverters
                       </Link>
-                      <Link
-                        href="/batteries/solar-storage"
-                        className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200"
-                        onClick={() => setIsProductsDropdownOpen(false)}
-                      >
+                      <Link href="/batteries/solar-storage" className="block px-3 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200" onClick={() => setIsProductsDropdownOpen(false)}>
                         Solar Battery Storage
                       </Link>
-                                          </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <Link
-              href="/why-us"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
+            <Link href="/why-us" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Why Us
             </Link>
-            <Link
-              href="/battery-scrap"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
+            <Link href="/battery-scrap" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Battery Scrap
             </Link>
-                        <Link
-              href="/contact"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
+            <Link href="/contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>
 
-          {/* Contact Actions */}
-          <div className="hidden md:flex items-center gap-3">
-            <a
-              href="tel:+917974146200"
-              className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
+          {/* Contact Actions - Desktop */}
+          <div className="hidden md:flex items-center gap-2 lg:gap-3">
+            <a href="tel:+917974146200" className="hidden xl:flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
               <span>+91 7974146200</span>
             </a>
-            <a
-              href="https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-colors"
-            >
+            <a href="https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 px-3 xl:px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-colors">
               <MessageCircle className="w-4 h-4" />
-              WhatsApp
+              <span className="hidden xl:inline">WhatsApp</span>
             </a>
-            <Button onClick={onInquiryClick} className="bg-primary hover:bg-primary/90">
-              Get a Quote
+            <Button onClick={onInquiryClick} size="sm" className="bg-primary hover:bg-primary/90 text-xs lg:text-sm px-3 lg:px-4">
+              Get Quote
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="lg:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          <button 
+            className="lg:hidden p-2 -mr-2 touch-manipulation active:scale-95 transition-transform" 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -269,74 +206,41 @@ export function Header({ onInquiryClick }: HeaderProps) {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border animate-in slide-in-from-top-2 max-h-[70vh] overflow-y-auto">
-            <nav className="flex flex-col gap-4">
-              <Link
-                href="/"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-              >
+            <nav className="flex flex-col gap-3">
+              <Link href="/" className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2 px-2 rounded-lg hover:bg-primary/5" onClick={() => setIsMobileMenuOpen(false)}>
                 Home
               </Link>
-              <Link
-                href="/about"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-              >
+              <Link href="/about" className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2 px-2 rounded-lg hover:bg-primary/5" onClick={() => setIsMobileMenuOpen(false)}>
                 About Us
               </Link>
+              
               {/* Mobile Products Dropdown */}
               <div className="space-y-2">
                 <button 
-                  className="text-left text-sm font-medium text-foreground hover:text-primary transition-all duration-200 flex items-center gap-2 py-2"
+                  className="w-full text-left text-sm font-medium text-foreground hover:text-primary transition-all duration-200 flex items-center gap-2 py-2 px-2 rounded-lg hover:bg-primary/5 touch-manipulation"
                   onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
                 >
-                  <Zap className="w-4 h-4 text-primary" />
+                  <Zap className="w-4 h-4 text-primary flex-shrink-0" />
                   Products
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ml-auto ${isProductsDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ${isProductsDropdownOpen ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                  <div className="pl-4 pr-2 space-y-3">
+                <div className={`overflow-hidden transition-all duration-300 ${isProductsDropdownOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                  <div className="pl-4 pr-2 space-y-3 py-2">
                     {/* Automotive Batteries Section */}
                     <div>
-                      <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Automotive Batteries</div>
+                      <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 px-2">Automotive Batteries</div>
                       <div className="space-y-1">
-                        <Link
-                          href="/batteries/four-wheeler"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/four-wheeler" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           4 Wheeler Batteries
                         </Link>
-                        <Link
-                          href="/batteries/bike-scooter"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
-                          Bikes & Scooters Batteries
+                        <Link href="/batteries/bike-scooter" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
+                          Bikes & Scooters
                         </Link>
-                        <Link
-                          href="/batteries/three-wheeler"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/three-wheeler" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           3 Wheeler Batteries
                         </Link>
-                        <Link
-                          href="/batteries/truck-tractor"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
-                          Trucks & Tractors Batteries
+                        <Link href="/batteries/truck-tractor" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
+                          Trucks & Tractors
                         </Link>
                       </div>
                     </div>
@@ -345,67 +249,25 @@ export function Header({ onInquiryClick }: HeaderProps) {
                     
                     {/* Inverter & UPS Section */}
                     <div>
-                      <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Inverter & UPS Batteries</div>
+                      <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 px-2">Inverter & UPS</div>
                       <div className="space-y-1">
-                        <Link
-                          href="/batteries/inverter"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/inverter" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           Inverter Batteries
                         </Link>
-                        <Link
-                          href="/batteries/ups"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/ups" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           Online UPS Systems
                         </Link>
-                        <Link
-                          href="/batteries/dg-set"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/dg-set" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           DG Set Batteries
                         </Link>
-                        <Link
-                          href="/batteries/sub-station"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/sub-station" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           Sub Station Batteries
                         </Link>
-                        <Link
-                          href="/batteries/telecom"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
-                          Telecom Tower Batteries
+                        <Link href="/batteries/telecom" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
+                          Telecom Tower
                         </Link>
-                        <Link
-                          href="/batteries/stacker-forklift"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
-                          Stackers & Forklift Batteries
+                        <Link href="/batteries/stacker-forklift" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
+                          Stackers & Forklift
                         </Link>
                       </div>
                     </div>
@@ -414,77 +276,46 @@ export function Header({ onInquiryClick }: HeaderProps) {
                     
                     {/* Solar Solutions Section */}
                     <div>
-                      <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Solar Solutions</div>
+                      <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 px-2">Solar Solutions</div>
                       <div className="space-y-1">
-                        <Link
-                          href="/batteries/solar"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/solar" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           Solar Panel Solutions
                         </Link>
-                        <Link
-                          href="/batteries/solar-inverters"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/solar-inverters" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           Solar Inverters
                         </Link>
-                        <Link
-                          href="/batteries/solar-storage"
-                          className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200"
-                          onClick={() => {
-                            setIsProductsDropdownOpen(false)
-                            setIsMobileMenuOpen(false)
-                          }}
-                        >
+                        <Link href="/batteries/solar-storage" className="block pl-4 py-2 text-sm text-muted-foreground hover:text-primary transition-all duration-200 rounded-lg hover:bg-primary/5" onClick={() => { setIsProductsDropdownOpen(false); setIsMobileMenuOpen(false); }}>
                           Solar Battery Storage
                         </Link>
-                                              </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <Link
-                href="/why-us"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-              >
+              
+              <Link href="/why-us" className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2 px-2 rounded-lg hover:bg-primary/5" onClick={() => setIsMobileMenuOpen(false)}>
                 Why Us
               </Link>
-              <Link
-                href="/battery-scrap"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-              >
+              <Link href="/battery-scrap" className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2 px-2 rounded-lg hover:bg-primary/5" onClick={() => setIsMobileMenuOpen(false)}>
                 Battery Scrap
               </Link>
-              <Link
-                href="/contact"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-              >
+              <Link href="/contact" className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2 px-2 rounded-lg hover:bg-primary/5" onClick={() => setIsMobileMenuOpen(false)}>
                 Contact
               </Link>
-              <hr className="border-border" />
-              <a href="tel:+917974146200" className="flex items-center gap-2 text-sm font-medium text-foreground">
-                <Phone className="w-4 h-4" />
+              
+              <hr className="border-border my-2" />
+              
+              <a href="tel:+917974146200" className="flex items-center gap-2 text-sm font-medium text-foreground py-2 px-2 rounded-lg hover:bg-primary/5 touch-manipulation">
+                <Phone className="w-4 h-4 text-primary" />
                 +91 7974146200
               </a>
-              <div className="flex gap-2">
-                <a
-                  href="https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg text-sm font-medium"
-                >
+              
+              <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                <a href="https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-green-500 text-white rounded-lg text-sm font-medium touch-manipulation active:scale-95 transition-transform">
                   <MessageCircle className="w-4 h-4" />
                   WhatsApp
                 </a>
-                <Button onClick={onInquiryClick} className="flex-1 bg-primary">
+                <Button onClick={() => { onInquiryClick(); setIsMobileMenuOpen(false); }} className="flex-1 bg-primary py-3 touch-manipulation active:scale-95 transition-transform">
                   Get a Quote
                 </Button>
               </div>
