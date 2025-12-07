@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/hero image.png" as="image" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
