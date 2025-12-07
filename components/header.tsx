@@ -268,31 +268,31 @@ export function Header({ onInquiryClick }: HeaderProps) {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border animate-in slide-in-from-top-2">
+          <div className="lg:hidden py-4 border-t border-border animate-in slide-in-from-top-2 max-h-[70vh] overflow-y-auto">
             <nav className="flex flex-col gap-4">
               <Link
                 href="/"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
                 About Us
               </Link>
               {/* Mobile Products Dropdown */}
               <div className="space-y-2">
                 <button 
-                  className="text-left text-sm font-medium text-foreground hover:text-primary transition-all duration-200 flex items-center gap-2 p-2 rounded-lg hover:bg-muted/50"
+                  className="text-left text-sm font-medium text-foreground hover:text-primary transition-all duration-200 flex items-center gap-2 py-2"
                   onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
                 >
                   <Zap className="w-4 h-4 text-primary" />
                   Products
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ml-auto ${isProductsDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ${isProductsDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className={`overflow-hidden transition-all duration-300 ${isProductsDropdownOpen ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
                   <div className="pl-4 pr-2 space-y-3">
                     {/* Automotive Batteries Section */}
                     <div>
@@ -453,19 +453,19 @@ export function Header({ onInquiryClick }: HeaderProps) {
               </div>
               <Link
                 href="/why-us"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
                 Why Us
               </Link>
               <Link
                 href="/battery-scrap"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
                 Battery Scrap
               </Link>
-                            <Link
+              <Link
                 href="/contact"
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors"
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
                 Contact
               </Link>

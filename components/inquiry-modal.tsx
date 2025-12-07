@@ -63,7 +63,7 @@ export function InquiryModal({ isOpen, onClose, selectedProduct }: InquiryModalP
 
   return (
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
-      <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto p-0" style={{ zIndex: 9999 }}>
+      <DialogContent className="sm:max-w-lg w-[95vw] max-w-[500px] max-h-[90vh] overflow-y-auto p-0" style={{ zIndex: 9999 }}>
         <DialogTitle className="sr-only">Power & Solar Solution Inquiry Form</DialogTitle>
         <DialogDescription className="sr-only">
           Share your basic details to get a tailored quote for batteries, inverters, solar solutions, and power backup requirements. Our team will contact you shortly.

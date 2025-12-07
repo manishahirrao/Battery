@@ -77,7 +77,7 @@ export function AboutSection() {
         </div>
         
         {/* Hero Content */}
-        <div className="relative z-10 container h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 container h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 pb-24">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Powering India's Future with Reliable Battery Solutions
@@ -86,7 +86,7 @@ export function AboutSection() {
               For over 5 years, Shri Guru Traders has been at the forefront of delivering premium power solutions across India, 
               combining cutting-edge technology with unparalleled customer service.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mb-8">
               <button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium transition-colors">
                 Our Products
               </button>

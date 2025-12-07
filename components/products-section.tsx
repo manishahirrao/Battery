@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Battery, Zap, Shield, ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
 import useEmblaCarousel from 'embla-carousel-react'
 
 interface ProductsSectionProps {
@@ -257,7 +257,16 @@ const productCategories = [
 ]
 
 function CategoryCarousel({ category, onInquiryClick }: { category: any, onInquiryClick: (product: string) => void }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' })
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: true, 
+    align: 'start',
+    containScroll: 'trimSnaps',
+    dragFree: false,
+    skipSnaps: false,
+    inViewThreshold: 0.7
+  })
+  const carouselRef = useRef<HTMLDivElement>(null)
+  const [isHovered, setIsHovered] = useState(false)
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -267,8 +276,50 @@ function CategoryCarousel({ category, onInquiryClick }: { category: any, onInqui
     if (emblaApi) emblaApi.scrollNext()
   }, [emblaApi])
 
+  // Auto-rotation effect - runs continuously, stops on hover
+  useEffect(() => {
+    if (!emblaApi) return
+
+    let interval: NodeJS.Timeout
+
+    const startRotation = () => {
+      console.log(`Starting rotation for ${category.name} with ${category.products.length} products`)
+      console.log(`Mobile: 1 product, Tablet: 2 products, Desktop: 3 products`)
+      interval = setInterval(() => {
+        if (emblaApi.canScrollNext()) {
+          emblaApi.scrollNext()
+        } else {
+          emblaApi.scrollTo(0)
+        }
+      }, 4000) // 4 seconds
+    }
+
+    const stopRotation = () => {
+      if (interval) clearInterval(interval)
+    }
+
+    // Start rotation immediately
+    startRotation()
+
+    // Stop rotation when hovered
+    if (isHovered) {
+      stopRotation()
+    } else {
+      startRotation()
+    }
+
+    return () => {
+      stopRotation()
+    }
+  }, [emblaApi, isHovered])
+
   return (
-    <div className="relative">
+    <div 
+      className="relative" 
+      ref={carouselRef}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Important Information Section */}
       {category.importantInfo && (
         <div className="mb-6">
