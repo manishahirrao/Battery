@@ -65,7 +65,7 @@ export function WhyChooseUs() {
             className="w-full h-full object-cover"
             onError={(e) => {
               console.error('Image failed to load:', e);
-              e.currentTarget.src = '/placeholder.jpg';
+              e.currentTarget.src = '/logo.png';
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />

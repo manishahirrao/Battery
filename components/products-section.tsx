@@ -321,7 +321,7 @@ function CategoryCarousel({ category, onInquiryClick }: { category: any, onInqui
                 <Card className="h-full overflow-hidden border-border bg-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col">
                   <div className="relative overflow-hidden flex-shrink-0">
                     <img
-                      src={product.image || "/placeholder.svg"}
+                      src={product.image}
                       alt={product.name}
                       className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                     />

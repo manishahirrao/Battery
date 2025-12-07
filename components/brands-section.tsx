@@ -28,7 +28,7 @@ export function BrandsSection() {
               className="flex items-center justify-center p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors grayscale hover:grayscale-0"
             >
               <img
-                src={brand.logo || "/placeholder.svg"}
+                src={brand.logo}
                 alt={brand.name}
                 className="h-10 md:h-12 w-auto object-contain"
               />
