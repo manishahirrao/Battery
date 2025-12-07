@@ -185,9 +185,14 @@ export function Footer() {
         {/* Copyright */}
         <div className="border-t border-background/20 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-background/60 text-sm">
-              © {new Date().getFullYear()} Shri Guru Traders. All Rights Reserved.
-            </p>
+            <div className="text-center md:text-left">
+              <p className="text-background/60 text-sm">
+                © {new Date().getFullYear()} Shri Guru Traders. All Rights Reserved.
+              </p>
+              <p className="text-background/40 text-xs mt-1">
+                Design by Adwikindia
+              </p>
+            </div>
             <div className="flex gap-6 text-sm text-background/60">
               <a href="/privacy-policy" className="hover:text-background transition-colors">
                 Privacy Policy

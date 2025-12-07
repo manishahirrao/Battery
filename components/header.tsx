@@ -292,7 +292,7 @@ export function Header({ onInquiryClick }: HeaderProps) {
                   Products
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ml-auto ${isProductsDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
-                <div className={`overflow-hidden transition-all duration-300 ${isProductsDropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className={`overflow-hidden transition-all duration-300 ${isProductsDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                   <div className="pl-4 pr-2 space-y-3">
                     {/* Automotive Batteries Section */}
                     <div>
