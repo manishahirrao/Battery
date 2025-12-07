@@ -7,7 +7,6 @@ import { ArrowRight, Battery, Zap, Shield, ChevronLeft, ChevronRight } from "luc
 import Link from "next/link"
 import { useState, useEffect, useCallback } from "react"
 import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
 
 interface ProductsSectionProps {
   onInquiryClick: (product: string) => void
@@ -258,9 +257,7 @@ const productCategories = [
 ]
 
 function CategoryCarousel({ category, onInquiryClick }: { category: any, onInquiryClick: (product: string) => void }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' }, [
-    Autoplay({ delay: 3000, stopOnInteraction: false })
-  ])
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' })
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
