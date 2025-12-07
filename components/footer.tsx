@@ -189,8 +189,10 @@ export function Footer() {
               <p className="text-background/60 text-sm">
                 © {new Date().getFullYear()} Shri Guru Traders. All Rights Reserved.
               </p>
-              <p className="text-background/40 text-xs mt-1">
-                Design by Adwikindia
+              <p className="text-primary font-medium text-sm mt-1 hover:text-primary/80 transition-colors cursor-pointer">
+                <a href="https://adwikindia.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary/80 transition-colors">
+                  Design by Adwikindia
+                </a>
               </p>
             </div>
             <div className="flex gap-6 text-sm text-background/60">

@@ -19,13 +19,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
           Special offer on premium batteries with exclusive discounts and best value guarantee
         </DialogDescription>
         {/* Header with gradient */}
-        <div className="bg-gradient-to-r from-primary to-primary/80 p-6 text-primary-foreground relative">
-          <button
-            onClick={onClose}
-            className="absolute top-3 right-3 p-1 rounded-full hover:bg-primary-foreground/20 transition-colors"
-          >
-            <X className="w-5 h-5" />
-          </button>
+        <div className="bg-gradient-to-r from-primary to-primary/80 p-6 text-primary-foreground">
           <div className="flex items-center gap-4 mb-3">
             <img 
               src="/logo.png" 
