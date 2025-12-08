@@ -23,9 +23,10 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
     }
   }, [isOpen])
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+    <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent 
         className="w-[calc(100vw-2rem)] max-w-[400px] p-0 overflow-hidden border-0 rounded-xl sm:rounded-lg gap-0 bg-white dark:bg-gray-900" 
+        showCloseButton={false}
         style={{ zIndex: 9999 }}
       >
         <DialogTitle className="sr-only">Welcome to Shri Guru Traders</DialogTitle>
@@ -85,11 +86,13 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
             </Button>
             <Button 
               variant="outline" 
-              onClick={onClose} 
+              asChild
               className="w-full h-11 sm:h-12 bg-transparent text-sm sm:text-base"
             >
-              <Phone className="mr-2 w-4 h-4" />
-              Call: +91 7974146200
+              <a href="tel:+917974146200">
+                <Phone className="mr-2 w-4 h-4" />
+                Call: +91 7974146200
+              </a>
             </Button>
           </div>
 
