@@ -131,7 +131,7 @@ export function AboutSection() {
               <div className="order-2 lg:order-1">
                 <div className="relative">
                   <img 
-                    src="/founder.jpg" 
+                    src="/Founder.jpg" 
                     alt="Founder of Shri Guru Traders"
                     className="w-full rounded-2xl shadow-2xl object-cover"
                     onError={(e) => {
