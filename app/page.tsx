@@ -9,6 +9,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { InquiryModal } from "@/components/inquiry-modal"
 import { WelcomePopup } from "@/components/welcome-popup"
 import { Footer } from "@/components/footer"
+import { BatteryBrands } from "@/components/battery-brands"
 import { useState, useEffect } from "react"
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden">
       <Header onInquiryClick={() => openModal()} />
       <HeroSection onInquiryClick={() => openModal()} />
+      <BatteryBrands />
       <ServiceCards />
       
       {/* Products Section Header - Mobile Optimized */}
