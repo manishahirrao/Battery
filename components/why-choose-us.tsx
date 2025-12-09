@@ -56,39 +56,47 @@ export function WhyChooseUs() {
   return (
     <>
       {/* Hero Section with Image */}
-      <section className="relative min-h-[60vh] flex items-center">
+      <section className="relative h-[50vh] sm:h-[60vh] md:min-h-[70vh] flex items-center bg-gradient-to-br from-primary/20 to-primary/10">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
-            src="/why%20us.png" 
-            alt="Why Choose Us" 
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              console.error('Image failed to load:', e);
-              e.currentTarget.src = '/logo.png';
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+          <div className="relative w-full h-full bg-gradient-to-br from-primary/30 to-background/50">
+            <img 
+              src="/why%20us.png" 
+              alt="Why Choose Us" 
+              className="absolute inset-0 w-full h-full object-cover object-center opacity-90"
+              style={{
+                objectPosition: 'center 25%',
+                minHeight: '100%',
+                minWidth: '100%',
+                transform: 'scale(1.1)'
+              }}
+              onError={(e) => {
+                console.error('Image failed to load:', e);
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         </div>
         
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 bg-white/20 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6 backdrop-blur-sm">
               <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
               Why Choose Us
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               Why <span className="text-primary">10,000+</span> Customers Trust Us
             </h1>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto px-2">
               We're committed to delivering exceptional battery solutions with unmatched service quality, 
               genuine products, and customer satisfaction that speaks for itself across India.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <a
                 href="tel:+917974146200"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base"
               >
                 Call Now: +91 7974146200
               </a>
@@ -96,7 +104,7 @@ export function WhyChooseUs() {
                 href="https://wa.me/917974146200?text=Hi,%20I'm%20interested%20in%20your%20battery%20products"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base"
               >
                 WhatsApp Us
               </a>
