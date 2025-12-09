@@ -48,7 +48,7 @@ const ExidePoweringBhopal: React.FC = () => {
                 Powering Bhopal
               </h1>
               <div className="text-blue-400 text-xl sm:text-2xl lg:text-3xl font-bold">
-                with India's #1 Battery Brand
+                with Exide & other leading battery brands
               </div>
             </div>
 

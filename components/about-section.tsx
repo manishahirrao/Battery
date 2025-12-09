@@ -80,10 +80,10 @@ export function AboutSection() {
         <div className="relative z-10 container h-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 pb-24">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Powering India's Future with Reliable Battery Solutions
+              Powering India with All Leading Battery Brands
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl">
-              For over 5 years, Shri Guru Traders has been at the forefront of delivering premium power solutions across India, 
+              For over 5 years, Shri Guru Traders has been at the forefront of delivering premium power solutions from all leading battery brands across India,
               combining cutting-edge technology with unparalleled customer service.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
@@ -122,6 +122,86 @@ export function AboutSection() {
         </div>
       </div>
       
+      {/* Founder Introduction Section */}
+      <div className="py-16 bg-gradient-to-b from-muted/20 to-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Founder Photo */}
+              <div className="order-2 lg:order-1">
+                <div className="relative">
+                  <img 
+                    src="/founder.jpg" 
+                    alt="Founder of Shri Guru Traders"
+                    className="w-full rounded-2xl shadow-2xl object-cover"
+                    onError={(e) => {
+                      console.error('Founder image failed to load:', e);
+                      e.currentTarget.src = '/logo.png';
+                    }}
+                  />
+                  <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground px-6 py-3 rounded-xl shadow-lg">
+                    <p className="font-bold text-lg">Founder & CEO</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Founder Content */}
+              <div className="order-1 lg:order-2 space-y-6">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    Meet Our Founder
+                  </h2>
+                  <p className="text-xl text-primary font-semibold mb-4">
+                    The Vision Behind Shri Guru Traders
+                  </p>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    With over 5 years of hands-on experience in the battery industry, our founder established Shri Guru Traders with a clear mission: to provide authentic, reliable battery solutions to every customer. What began as a small retail operation has grown into one of Bhopal's most trusted battery businesses, serving over 10,000 satisfied customers across the region.
+                  </p>
+                  <p>
+                    Our founder's deep technical knowledge and commitment to quality has shaped our company's core values. Every battery we sell is personally vetted for quality and performance, ensuring our customers receive only the best products from leading brands.
+                  </p>
+                </div>
+
+                {/* Tutorial/Expertise Details */}
+                <div className="bg-gradient-to-r from-primary/5 to-accent/5 p-6 rounded-xl border-l-4 border-primary">
+                  <h3 className="text-lg font-semibold text-primary mb-3">Expertise & Guidance</h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>
+                      <span>Personal consultation for battery selection based on your specific needs</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>
+                      <span>Expert guidance on battery maintenance and longevity tips</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>
+                      <span>Technical support for installation and troubleshooting</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>
+                      <span>Regular workshops on battery care and energy optimization</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex items-center gap-4 pt-4">
+                  <div className="bg-primary/10 px-4 py-2 rounded-full">
+                    <span className="text-primary font-semibold">5+ Years Industry Experience</span>
+                  </div>
+                  <div className="bg-accent/20 px-4 py-2 rounded-full">
+                    <span className="text-accent-foreground font-semibold">10,000+ Customers Served</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Rest of the content */}
       <div className="py-16 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -138,6 +138,48 @@ const inverterBatteries = [
     applications: ["Large Homes", "Offices", "Clinics", "Educational Institutes"],
     description: "Exide Gold Tubular 1600 is the premium tubular battery offering maximum service life and zero maintenance.",
     detailedDescription: "The Gold Tubular 1600 represents the pinnacle of tubular battery technology with premium-grade materials. Its ultra-thick tubular plates provide exceptional durability and service life, while the zero-maintenance design eliminates the need for regular water topping, making it perfect for demanding applications."
+  },
+  {
+    id: "red-charge-rc18000",
+    name: "Red Charge RC18000",
+    brand: "Red Charge",
+    image: "/Red Charge RC18000.jpeg",
+    rating: 4.5,
+    capacity: "180Ah",
+    voltage: "12V",
+    warranty: "48 Months",
+    features: ["High Capacity", "Deep Cycle", "Low Maintenance", "Quick Recovery"],
+    applications: ["Large Homes", "Offices", "Small Commercial", "Hospitals"],
+    description: "Red Charge RC18000 delivers high capacity backup with reliable deep cycle performance for extended power needs.",
+    detailedDescription: "The RC18000 battery offers exceptional 180Ah capacity with advanced deep cycle technology. Its robust construction ensures consistent performance in demanding applications, while the low maintenance design reduces operational costs. Perfect for locations requiring extended backup periods."
+  },
+  {
+    id: "aam-tt-150",
+    name: "AAM-TT-150",
+    brand: "AAM",
+    image: "/AAM-TT-150.jpg",
+    rating: 4.4,
+    capacity: "150Ah",
+    voltage: "12V",
+    warranty: "36 Months",
+    features: ["Tubular Technology", "Efficient Backup", "Low Water Loss", "Durable"],
+    applications: ["Medium Homes", "Shops", "Small Offices", "Clinics"],
+    description: "AAM-TT-150 provides reliable tubular technology backup with efficient performance for medium power requirements.",
+    detailedDescription: "The AAM-TT-150 utilizes proven tubular technology with optimized plate design for efficient energy storage and delivery. Its low water consumption feature ensures minimal maintenance, while the durable construction provides reliable service for years."
+  },
+  {
+    id: "it-1554st",
+    name: "IT 1554ST",
+    brand: "IT",
+    image: "/IT 1554ST.webp",
+    rating: 4.6,
+    capacity: "150Ah",
+    voltage: "12V",
+    warranty: "42 Months",
+    features: ["Advanced Tubular", "High Efficiency", "Corrosion Resistant", "Extended Life"],
+    applications: ["Home Backup", "Office Backup", "Small Shops", "Educational Institutes"],
+    description: "IT 1554ST combines advanced tubular technology with high efficiency for reliable power backup solutions.",
+    detailedDescription: "The IT 1554ST battery features advanced tubular plate technology with corrosion-resistant alloys for extended service life. Its high-efficiency design ensures optimal energy conversion and quick recovery, making it ideal for frequent power cut areas."
   }
 ]
 

@@ -54,6 +54,20 @@ const truckTractorBatteries = [
     applications: ["Heavy Trucks", "Long Haul", "Commercial Fleets", "Industrial Transport"],
     description: "Exide Xpress Ultra Truck Battery delivers maximum capacity for demanding truck applications.",
     detailedDescription: "The Xpress Ultra Truck Battery represents maximum capacity with premium Xpress Ultra technology for demanding truck applications. Its extended warranty and premium construction provide maximum reliability for commercial fleets. The maximum capacity design ensures excellent performance for heavy trucks and long haul operations."
+  },
+  {
+    id: "harvest-150ah",
+    name: "Harvest 150Ah",
+    brand: "Harvest",
+    image: "/Harvest 150Ah.webp",
+    rating: 4.4,
+    capacity: "150Ah",
+    voltage: "12V",
+    warranty: "36 Months",
+    features: ["Agricultural Grade", "High Capacity", "Durable", "Cost Effective"],
+    applications: ["Tractors", "Farm Equipment", "Agricultural Vehicles", "Rural Transport"],
+    description: "Harvest 150Ah is designed for agricultural applications with reliable performance for farm equipment.",
+    detailedDescription: "The Harvest 150Ah battery is specifically engineered for agricultural applications with high capacity design for tractors and farm equipment. Its durable construction ensures reliable performance in demanding farming conditions. The cost-effective design provides excellent value for agricultural and rural transport applications."
   }
 ]
 

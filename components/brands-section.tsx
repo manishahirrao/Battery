@@ -17,7 +17,7 @@ export function BrandsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Trusted Brands We Carry</h2>
-          <p className="text-muted-foreground">Authorized dealer for India{"'"}s leading battery manufacturers</p>
+          <p className="text-muted-foreground">Authorized dealer for India{"'"}s leading battery brands across vehicles, inverters, solar and more</p>
         </div>
 
         {/* Brands Grid */}

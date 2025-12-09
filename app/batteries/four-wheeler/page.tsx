@@ -69,7 +69,35 @@ const fourWheelerBatteries = [
     description: "Exide Marathon Max 35L is designed for extended life and durability in compact vehicles.",
     detailedDescription: "The Marathon Max 35L battery features extended life technology with durable construction for long service life. Its high-performance design ensures reliable power delivery for compact vehicles. The Marathon Max technology provides excellent resistance to vibration and harsh conditions."
   },
-  ]
+  {
+    id: "t4-car-battery",
+    name: "T4 Car Battery",
+    brand: "T4",
+    image: "/T4 Car Battery.jpeg",
+    rating: 4.4,
+    capacity: "45Ah",
+    voltage: "12V",
+    warranty: "24 Months",
+    features: ["High Power", "Quick Start", "Durable", "Low Maintenance"],
+    applications: ["Compact Cars", "Hatchbacks", "Small Sedans", "City Vehicles"],
+    description: "T4 Car Battery provides reliable starting power with high performance for compact vehicles.",
+    detailedDescription: "The T4 Car Battery is engineered for reliable starting power with high-performance design. Its durable construction ensures consistent performance in various weather conditions. The low maintenance design makes it ideal for daily commuters and city driving."
+  },
+  {
+    id: "flo-55b24l",
+    name: "Flo 55B24L",
+    brand: "Flo",
+    image: "/Flo 55B24L.jpeg",
+    rating: 4.5,
+    capacity: "45Ah",
+    voltage: "12V",
+    warranty: "30 Months",
+    features: ["Advanced Technology", "Long Life", "High Cranking Power", "Reliable"],
+    applications: ["Sedans", "Compact SUVs", "Mid-size Cars", "Family Vehicles"],
+    description: "Flo 55B24L offers advanced technology with long life and high cranking power for reliable performance.",
+    detailedDescription: "The Flo 55B24L battery features advanced technology with enhanced cranking power for reliable engine starting. Its long-life design ensures extended service life, while the robust construction provides excellent performance in demanding conditions. Ideal for family vehicles and mid-size cars requiring consistent power delivery."
+  }
+]
 
 export default function FourWheelerBatteriesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)

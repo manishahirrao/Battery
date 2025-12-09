@@ -23,8 +23,8 @@ export function Footer() {
              
             </div>
             <p className="text-background/70 text-sm leading-relaxed">
-              Your trusted power partner. We are authorized dealers for all major battery brands in India,
-              providing quality products with the best warranty and service.
+              Your trusted power partner. We are authorized dealers for all leading battery brands in India,
+              providing quality batteries for vehicles, inverters, solar and industrial use with the best warranty and service.
             </p>
             <p className="text-accent font-medium text-sm">Powering Your World!</p>
 

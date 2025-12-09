@@ -25,6 +25,34 @@ const twoWheelerBatteries = [
     applications: ["Motorcycles", "Scooters", "Mopeds", "ATVs"],
     description: "Exide Jetski is a premium two-wheeler battery designed for reliable performance in all riding conditions. It features advanced technology for superior starting power and durability.",
     detailedDescription: "The Exide Jetski battery utilizes advanced lead-acid technology with calcium alloy for enhanced performance and longer life. Its robust construction includes vibration-resistant plates that withstand rough road conditions and frequent stops. The maintenance-free design eliminates the need for electrolyte topping, while the sealed construction prevents acid leakage. The battery's high cranking power ensures reliable starts even in cold weather conditions."
+  },
+  {
+    id: "lf-5e-five-ah",
+    name: "LF-5E Five Ah",
+    brand: "LF",
+    image: "/LF-5E Five Ah.webp",
+    rating: 4.3,
+    capacity: "5Ah",
+    voltage: "12V",
+    warranty: "12 Months",
+    features: ["Lightweight", "Quick Start", "Low Maintenance", "Compact Design"],
+    applications: ["Motorcycles", "Scooters", "Mopeds", "Small Bikes"],
+    description: "LF-5E Five Ah is a compact battery designed for small two-wheelers with reliable starting power.",
+    detailedDescription: "The LF-5E Five Ah battery features lightweight construction with compact design perfect for small motorcycles and scooters. Its quick start technology ensures reliable ignition, while the low maintenance design provides hassle-free operation. The compact size makes it ideal for vehicles with limited battery space."
+  },
+  {
+    id: "pro-bike-rider-9ah",
+    name: "Pro Bike Rider 9Ah",
+    brand: "Pro Bike",
+    image: "/Pro Bike Rider 9Ah.jpg",
+    rating: 4.4,
+    capacity: "9Ah",
+    voltage: "12V",
+    warranty: "18 Months",
+    features: ["High Capacity", "Enhanced Power", "Durable", "Long Life"],
+    applications: ["Motorcycles", "Scooters", "Heavy Bikes", "Performance Vehicles"],
+    description: "Pro Bike Rider 9Ah offers enhanced power and capacity for demanding two-wheeler applications.",
+    detailedDescription: "The Pro Bike Rider 9Ah battery provides enhanced power with higher capacity for demanding two-wheeler applications. Its durable construction ensures long service life even in harsh riding conditions. The enhanced power delivery makes it ideal for performance motorcycles and heavy bikes requiring consistent electrical output."
   }
 ]
 

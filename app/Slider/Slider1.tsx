@@ -24,7 +24,7 @@ const ExideHeroSlider: React.FC = () => {
           <div className="max-w-3xl">
             {/* Main Heading */}
             <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6 sm:mb-8">
-              🔥 Powering Bhopal with EXIDE – The #1 Battery Brand
+              🔥 Powering Bhopal with EXIDE & Other Leading Battery Brands
             </h1>
 
             {/* Features Grid */}

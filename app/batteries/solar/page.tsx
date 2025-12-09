@@ -68,6 +68,21 @@ const solarPanelProducts = [
     applications: ["Residential", "Commercial", "Industrial", "Premium Installations"],
     description: "Advanced PERC technology solar panels with enhanced efficiency and reduced degradation",
     detailedDescription: "PERC (Passivated Emitter and Rear Cell) technology represents the latest advancement in solar panel design. These panels feature enhanced efficiency through improved light absorption and reduced electron recombination, resulting in better performance and slower degradation over time compared to traditional panels."
+  },
+  {
+    id: "solar-battery-is-1500",
+    name: "Solar IS 1500",
+    brand: "Solar",
+    image: "/Solar IS 1500.avif",
+    rating: 4.6,
+    type: "Solar Battery",
+    capacity: "150Ah",
+    voltage: "12V",
+    warranty: "60 Months",
+    features: ["Deep Cycle", "Solar Optimized", "Low Maintenance", "High Durability"],
+    applications: ["Solar Power Systems", "Off-Grid Solutions", "Hybrid Systems", "Energy Storage"],
+    description: "Solar IS 1500 is a specialized deep cycle battery optimized for solar power storage applications.",
+    detailedDescription: "The Solar IS 1500 battery is specifically designed for solar energy storage with advanced deep cycle technology. Its solar-optimized design ensures efficient charging from solar panels and excellent performance in daily charge-discharge cycles. The low maintenance construction and high durability make it perfect for off-grid and hybrid solar installations."
   }
 ]
 

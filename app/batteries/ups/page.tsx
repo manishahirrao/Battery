@@ -82,6 +82,34 @@ const upsBatteries = [
     applications: ["Medium UPS Systems", "Network Equipment", "Security Systems", "Industrial Applications"],
     description: "Exide SMF EP 1200 combines sealed maintenance-free design with extended performance capabilities.",
     detailedDescription: "The SMF EP 1200 battery features advanced sealed maintenance-free technology with extended performance characteristics. Its reliable design and consistent performance make it ideal for medium-sized UPS systems and critical equipment backup."
+  },
+  {
+    id: "hta-3kva-ups",
+    name: "HTA 3KVA UPS",
+    brand: "HTA",
+    image: "/HTA 3KVA UPS.png",
+    rating: 4.5,
+    capacity: "3KVA",
+    voltage: "24V",
+    warranty: "24 Months",
+    features: ["Online UPS", "Double Conversion", "High Efficiency", "LCD Display"],
+    applications: ["Small Offices", "Server Rooms", "Network Equipment", "Point of Sale"],
+    description: "HTA 3KVA UPS provides reliable power protection with online double conversion technology.",
+    detailedDescription: "The HTA 3KVA UPS features advanced online double conversion technology ensuring clean, stable power for sensitive equipment. Its high efficiency design reduces energy costs while the LCD display provides real-time monitoring of UPS status and battery conditions."
+  },
+  {
+    id: "amplon-rt-1-3kva",
+    name: "Amplon RT 1-3KVA",
+    brand: "Amplon",
+    image: "/Amplon RT 1-3KVA.jpeg",
+    rating: 4.4,
+    capacity: "3KVA",
+    voltage: "24V",
+    warranty: "36 Months",
+    features: ["Tower Design", "Smart Management", "Auto Restart", "Wide Input Range"],
+    applications: ["Small Business", "Retail", "Banking", "Healthcare"],
+    description: "Amplon RT 1-3KVA offers reliable tower UPS protection with intelligent management features.",
+    detailedDescription: "The Amplon RT 1-3KVA UPS combines tower design with smart management capabilities for optimal power protection. Its auto restart function and wide input range ensure reliable operation in challenging power environments while providing easy monitoring and control."
   }
 ]
 

@@ -55,7 +55,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
               <p className="text-xl sm:text-2xl font-bold">Shri Guru Traders</p>
             </div>
           </div>
-          <p className="text-primary-foreground/90 text-xs sm:text-sm text-center">Your Trusted Power Partner</p>
+          <p className="text-primary-foreground/90 text-xs sm:text-sm text-center">Your trusted partner for all leading battery brands</p>
         </div>
 
         {/* Content */}
@@ -63,7 +63,7 @@ export function WelcomePopup({ isOpen, onClose, onInquiryClick }: WelcomePopupPr
           <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground">
             <p className="flex items-start gap-2.5">
               <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
-              <span>Premium Batteries for All Vehicles</span>
+              <span>Premium batteries of all leading brands for every vehicle</span>
             </p>
             <p className="flex items-start gap-2.5">
               <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />

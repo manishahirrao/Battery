@@ -10,10 +10,10 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Shri Guru Traders - Premium Battery Solutions",
   description:
-    "Your trusted power partner for automotive, inverter, solar, and e-rickshaw batteries. Quality products with best warranty and fast delivery.",
+    "Your trusted power partner for automotive, inverter, solar, and e-rickshaw batteries from all leading brands. Quality products with best warranty and fast delivery.",
   keywords:
     "batteries, automotive batteries, inverter batteries, solar batteries, e-rickshaw batteries, truck batteries, two wheeler batteries",
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({

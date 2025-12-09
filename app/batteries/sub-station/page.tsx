@@ -68,6 +68,20 @@ const subStationBatteries = [
     applications: ["Heavy Industry", "Power Plants", "Mining Operations", "Critical Infrastructure"],
     description: "Exide HD Heavy Duty Industrial battery is engineered for the most demanding industrial applications.",
     detailedDescription: "The HD Heavy Duty Industrial battery is engineered for maximum durability in the most demanding industrial applications. Its heavy-duty construction with ultra-thick plates and extended warranty make it perfect for critical infrastructure requiring ultimate reliability."
+  },
+  {
+    id: "powerstack-pps-series",
+    name: "PowerStack PPS Series VRLA 2V 500Ah",
+    brand: "PowerStack",
+    image: "/PowerStack PPS Series.jpeg",
+    rating: 4.6,
+    capacity: "500Ah",
+    voltage: "2V",
+    warranty: "72 Months",
+    features: ["VRLA Technology", "Maintenance Free", "High Capacity", "Stationary Design"],
+    applications: ["Power Substations", "Telecom Infrastructure", "Switchyards", "Control Rooms"],
+    description: "PowerStack PPS Series VRLA 2V 500Ah is a maintenance-free stationary battery for substation applications.",
+    detailedDescription: "The PowerStack PPS Series VRLA battery features advanced Valve Regulated Lead Acid (VRLA) technology for maintenance-free operation. Its high capacity 500Ah design provides extended backup time for critical substation equipment, while the stationary construction ensures reliable performance in demanding environments."
   }
 ]
 

@@ -68,6 +68,20 @@ const threeWheelerBatteries = [
     applications: ["E-Rickshaws", "E-Autos", "Commercial 3-Wheelers", "Heavy Duty EVs"],
     description: "Exide Tubular ER135 combines tubular technology with deep cycle performance for three-wheelers.",
     detailedDescription: "The Tubular ER135 battery features advanced tubular technology with ER series design for deep cycle performance in three-wheeler applications. Its long service life and reliable performance make it ideal for commercial operations."
+  },
+  {
+    id: "current-ev-120ah",
+    name: "Current EV 120Ah",
+    brand: "Current",
+    image: "/Current EV 120Ah.webp",
+    rating: 4.5,
+    capacity: "120Ah",
+    voltage: "12V",
+    warranty: "24 Months",
+    features: ["EV Technology", "High Capacity", "Deep Cycle", "Reliable Performance"],
+    applications: ["E-Rickshaws", "E-Autos", "Electric 3-Wheelers", "Commercial EVs"],
+    description: "Current EV 120Ah is designed for electric three-wheelers with high capacity and reliable performance.",
+    detailedDescription: "The Current EV 120Ah battery features advanced EV technology optimized for electric three-wheeler applications. Its high capacity design provides extended range for commercial operations, while the deep cycle technology ensures reliable performance in demanding daily use conditions."
   }
 ]
 

@@ -39,6 +39,20 @@ const solarInverterProducts = [
     applications: ["Residential", "Complex Roofs", "Shaded Areas", "Premium Systems"],
     description: "Advanced micro solar inverter for panel-level optimization and maximum energy harvest",
     detailedDescription: "Micro solar inverters are installed on each solar panel, providing individual optimization and monitoring. This technology maximizes energy production, especially in installations with shading or complex roof layouts."
+  },
+  {
+    id: "solar-inverter-lptt12150h",
+    name: "Solar LPTT12150H",
+    brand: "Solar",
+    image: "/Solar LPTT12150H.webp",
+    rating: 4.5,
+    type: "Solar Charge Controller",
+    capacity: "12V/24V - 150A",
+    warranty: "5 Years",
+    features: ["MPPT Technology", "High Efficiency", "LCD Display", "Multiple Battery Types"],
+    applications: ["Solar Power Systems", "Off-Grid Solutions", "Battery Charging", "RV Systems"],
+    description: "Solar LPTT12150H is a high-performance MPPT solar charge controller for efficient solar energy management.",
+    detailedDescription: "The Solar LPTT12150H charge controller features advanced MPPT (Maximum Power Point Tracking) technology for maximum solar energy harvest. Its high efficiency design ensures optimal power conversion from solar panels to batteries. The LCD display provides real-time monitoring of system parameters, while support for multiple battery types makes it versatile for various solar applications."
   }
 ]
 
